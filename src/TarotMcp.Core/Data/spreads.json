@@ -1,0 +1,214 @@
+{
+  "note": "layout.x/y: card-width units, (0,0)=spread centre, y grows downward; rotation in degrees; z = stacking order. celtic_cross follows A. E. Waite, The Pictorial Key to the Tarot (1911), part 3 section 7. single_card and three_card_timeline are original definitions. The Significator is intentionally not used.",
+  "spreads": [
+    {
+      "id": "single_card",
+      "name_zh": "單張牌",
+      "name_en": "Single Card",
+      "card_count": 1,
+      "use_for": "今日指引、簡單的方向或提醒",
+      "source": "original",
+      "positions": [
+        {
+          "index": 1,
+          "id": "guidance",
+          "name_zh": "指引",
+          "meaning_zh": "此刻最值得留意的主題或提醒。",
+          "layout": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "three_card_timeline",
+      "name_zh": "三張牌：過去／現在／未來",
+      "name_en": "Past, Present, Future",
+      "card_count": 3,
+      "use_for": "一件事的來龍去脈與可能的走向",
+      "source": "original",
+      "positions": [
+        {
+          "index": 1,
+          "id": "past",
+          "name_zh": "過去",
+          "meaning_zh": "影響現況的背景與已經發生的事。",
+          "layout": {
+            "x": -1,
+            "y": 0,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 2,
+          "id": "present",
+          "name_zh": "現在",
+          "meaning_zh": "目前的狀態與正在發生的事。",
+          "layout": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 3,
+          "id": "future",
+          "name_zh": "未來",
+          "meaning_zh": "依照目前的走向，接下來可能發展的方向。",
+          "layout": {
+            "x": 1,
+            "y": 0,
+            "rotation": 0,
+            "z": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "celtic_cross",
+      "name_zh": "凱爾特十字",
+      "name_en": "Celtic Cross (An Ancient Celtic Method of Divination)",
+      "card_count": 10,
+      "use_for": "針對一個明確問題，想完整看清現況、阻礙、基礎與結果",
+      "source": "waite-pkt-1911 part 3 section 7",
+      "significator": "Waite selects a Significator card first (from the court cards by the querent's appearance) and covers it with card 1. This draft drops the Significator, as most modern practice does.",
+      "positions": [
+        {
+          "index": 1,
+          "id": "covers",
+          "name_zh": "覆蓋",
+          "name_en": "This covers him",
+          "meaning_zh": "影響整件事的整體氛圍，其他影響都在這個背景下運作。",
+          "layout": {
+            "x": 0,
+            "y": 0,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 2,
+          "id": "crosses",
+          "name_zh": "交叉",
+          "name_en": "This crosses him",
+          "meaning_zh": "阻礙或挑戰的性質。若是好牌，代表阻力不嚴重，或某件本身是好事的東西，在這件事上未必帶來好處。",
+          "layout": {
+            "x": 0,
+            "y": 0,
+            "rotation": 90,
+            "z": 1
+          }
+        },
+        {
+          "index": 3,
+          "id": "crowns",
+          "name_zh": "上方",
+          "name_en": "This crowns him",
+          "meaning_zh": "提問者的目標或理想，也是在目前條件下能達到的最好結果，但尚未成為現實。",
+          "layout": {
+            "x": 0,
+            "y": -1,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 4,
+          "id": "beneath",
+          "name_zh": "下方",
+          "name_en": "This is beneath him",
+          "meaning_zh": "事情的基礎：已經成為現實、當事人已經擁有的部分。",
+          "layout": {
+            "x": 0,
+            "y": 1,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 5,
+          "id": "behind",
+          "name_zh": "身後",
+          "name_en": "This is behind him",
+          "meaning_zh": "剛過去、或正在消退的影響。",
+          "layout": {
+            "x": 1,
+            "y": 0,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 6,
+          "id": "before",
+          "name_zh": "眼前",
+          "name_en": "This is before him",
+          "meaning_zh": "即將開始運作、近期內會發揮作用的影響。",
+          "layout": {
+            "x": -1,
+            "y": 0,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 7,
+          "id": "self",
+          "name_zh": "自身",
+          "name_en": "Himself",
+          "meaning_zh": "當事人（或事件）在這個情境中的位置與態度。",
+          "layout": {
+            "x": 3,
+            "y": 1.5,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 8,
+          "id": "house",
+          "name_zh": "環境",
+          "name_en": "His house",
+          "meaning_zh": "周遭環境，以及其中影響此事的傾向，例如所處的位置、身邊親友的影響。",
+          "layout": {
+            "x": 3,
+            "y": 0.5,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 9,
+          "id": "hopes_fears",
+          "name_zh": "希望或恐懼",
+          "name_en": "His hopes or fears",
+          "meaning_zh": "當事人對這件事抱持的期待或擔憂。",
+          "layout": {
+            "x": 3,
+            "y": -0.5,
+            "rotation": 0,
+            "z": 0
+          }
+        },
+        {
+          "index": 10,
+          "id": "outcome",
+          "name_zh": "結果",
+          "name_en": "What will come",
+          "meaning_zh": "由其他牌所顯示的影響，最終導向的歸結。",
+          "layout": {
+            "x": 3,
+            "y": -1.5,
+            "rotation": 0,
+            "z": 0
+          }
+        }
+      ]
+    }
+  ]
+}

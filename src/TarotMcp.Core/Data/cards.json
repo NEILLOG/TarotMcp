@@ -1,0 +1,2399 @@
+{
+  "version": 1,
+  "note": "Chinese meanings are original rewrites in a modern reflective tone, based on Waite (1910/1911) and common modern RWS readings. Reversed meanings follow modern convention and often differ from Waite's own; his English text is kept under source for traceability. element is set for minor arcana only (suit element); major arcana left null because attributions vary by tradition. image_prompt holds a scene description per card; combine with the shared style prefix before use.",
+  "cards": [
+    {
+      "id": "major_00",
+      "name_zh": "愚者",
+      "name_en": "The Fool",
+      "arcana": "major",
+      "suit": null,
+      "number": 0,
+      "element": null,
+      "keywords_upright": [
+        "新的開始",
+        "自由",
+        "冒險",
+        "天真",
+        "信任"
+      ],
+      "keywords_reversed": [
+        "魯莽",
+        "猶豫",
+        "不顧後果",
+        "缺乏準備"
+      ],
+      "meaning_upright": "站在新階段的起點，帶著輕盈與好奇往前走。這張牌邀請你暫時放下過多的算計，相信自己能邊走邊學。它提醒的是勇氣，而不是保證結果。",
+      "meaning_reversed": "可能是衝動行事而沒想清楚後果，也可能是因為害怕而遲遲不敢踏出第一步。值得問問自己：現在的猶豫，是謹慎還是逃避？",
+      "image": "cards/major_00.webp",
+      "image_prompt": "A young woman with long flowing hair and a flower crown, eyes closed and face tilted up, stepping lightly toward the edge of a cliff with arms open. She wears a flowing cream dress with gold embroidery and carries a small leather satchel. A small white dog leaps playfully at her feet. Night sky with a large golden crescent moon, scattered stars, distant mountains and a winding river glowing in the valley below.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Folly, mania, extravagance, intoxication, delirium, frenzy, bewrayment.",
+        "waite_reversed_en": "Negligence, absence, distribution, carelessness, apathy, nullity, vanity."
+      },
+      "review_note": "韋特原文正位為 folly, mania（愚蠢、瘋狂），這裡採現代的新開始解讀。"
+    },
+    {
+      "id": "major_01",
+      "name_zh": "魔術師",
+      "name_en": "The Magician",
+      "arcana": "major",
+      "suit": null,
+      "number": 1,
+      "element": null,
+      "keywords_upright": [
+        "創造力",
+        "意志",
+        "專注",
+        "善用資源"
+      ],
+      "keywords_reversed": [
+        "操弄",
+        "才能閒置",
+        "缺乏方向",
+        "言行不一"
+      ],
+      "meaning_upright": "你手邊其實已經有需要的工具與才能，這張牌提醒你把注意力聚焦，把想法轉成行動。當意志與行動一致時，你有能力讓事情成形。",
+      "meaning_reversed": "資源或才華沒有被好好運用，或是專注力被分散了。也可能提醒你留意話語與行動是否一致，避免只靠包裝而缺少真誠。",
+      "image": "cards/major_01.webp",
+      "image_prompt": "A robed magician standing behind a wooden altar-table, one hand raised high holding a glowing wand toward the sky, the other pointing down toward the earth. On the table lie a golden cup, a sword, a coin engraved with a star and a second wand, one of each. A glowing sideways figure-eight of light floats above the head. Red roses and white lilies bloom around the table, dark star-filled sky behind.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Skill, diplomacy, address, subtlety; sickness, pain, loss, disaster, snares of enemies; self-confidence, will; the Querent, if male.",
+        "waite_reversed_en": "Physician, Magus, mental disease, disgrace, disquiet."
+      }
+    },
+    {
+      "id": "major_02",
+      "name_zh": "女祭司",
+      "name_en": "The High Priestess",
+      "arcana": "major",
+      "suit": null,
+      "number": 2,
+      "element": null,
+      "keywords_upright": [
+        "直覺",
+        "內在智慧",
+        "沉靜",
+        "尚未揭曉的事"
+      ],
+      "keywords_reversed": [
+        "忽視直覺",
+        "隱瞞",
+        "只看表面",
+        "內在混亂"
+      ],
+      "meaning_upright": "答案也許還沒有浮現，現在適合安靜下來，傾聽內在的聲音。這張牌提醒你，有些事不必急著弄清楚，先觀察、先感受。",
+      "meaning_reversed": "可能是太依賴表面的資訊，而忽略了內心真正的感受；也可能有些事被隱藏或沒有說出口。值得問問自己：你是在聽直覺，還是在聽雜音？",
+      "image": "cards/major_02.webp",
+      "image_prompt": "A serene woman in a flowing blue robe seated between two tall stone pillars, one black and one pale, with a veil of pomegranates hanging between them. A silver crescent moon rests at her feet, a tall lunar crown on her head, a partly hidden scroll in her lap. The hem of her robe turns into rippling water. Quiet, mysterious, moonlit atmosphere.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Secrets, mystery, the future as yet unrevealed; the woman who interests the Querent, if male; the Querent herself, if female; silence, tenacity; mystery, wisdom, science.",
+        "waite_reversed_en": "Passion, moral or physical ardour, conceit, surface knowledge."
+      }
+    },
+    {
+      "id": "major_03",
+      "name_zh": "皇后",
+      "name_en": "The Empress",
+      "arcana": "major",
+      "suit": null,
+      "number": 3,
+      "element": null,
+      "keywords_upright": [
+        "豐盛",
+        "滋養",
+        "創造",
+        "感官享受",
+        "照顧"
+      ],
+      "keywords_reversed": [
+        "過度依賴",
+        "創造力停滯",
+        "忽略自己",
+        "過度付出"
+      ],
+      "meaning_upright": "與豐盛、照顧和創造有關的能量。這張牌鼓勵你滋養自己與身邊的人，也享受生活中美好的事物，讓想法慢慢長成果實。",
+      "meaning_reversed": "照顧別人的同時忽略了自己，或是創造力暫時卡住。也可能是過度保護或過度依賴，值得想想：付出與接受之間是否失去了平衡？",
+      "image": "cards/major_03.webp",
+      "image_prompt": "A gentle empress seated on a cushioned throne in a golden wheat field, wearing a crown of twelve small stars and a flowing gown patterned with pomegranates. A heart-shaped shield rests beside her and a short scepter in her hand. Lush forest and a small waterfall behind, warm glowing light, abundant and nurturing mood.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Fruitfulness, action, initiative, length of days; the unknown, clandestine; also difficulty, doubt, ignorance.",
+        "waite_reversed_en": "Light, truth, the unravelling of involved matters, public rejoicings; according to another reading, vacillation."
+      }
+    },
+    {
+      "id": "major_04",
+      "name_zh": "皇帝",
+      "name_en": "The Emperor",
+      "arcana": "major",
+      "suit": null,
+      "number": 4,
+      "element": null,
+      "keywords_upright": [
+        "秩序",
+        "責任",
+        "穩定",
+        "領導",
+        "界線"
+      ],
+      "keywords_reversed": [
+        "專斷",
+        "僵化",
+        "控制欲",
+        "缺乏紀律"
+      ],
+      "meaning_upright": "代表建立秩序、承擔責任的力量。這張牌提醒你，用清楚的規則與界線，為想做的事打下穩固的基礎。",
+      "meaning_reversed": "權威可能變成固執或控制，也可能是缺乏規劃與紀律，讓事情失去結構。值得檢視：你是在帶領，還是在支配？",
+      "image": "cards/major_04.webp",
+      "image_prompt": "A stern emperor seated on a heavy stone throne carved with ram heads, wearing a red robe over steel armor, a golden crown, holding an ankh-topped scepter in one hand and a golden orb in the other. Behind him bare, rocky mountains and a thin winding river under a dark orange-tinted sky. Authority and structure.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Stability, power, protection, realization; a great person; aid, reason, conviction; also authority and will.",
+        "waite_reversed_en": "Benevolence, compassion, credit; also confusion to enemies, obstruction, immaturity."
+      }
+    },
+    {
+      "id": "major_05",
+      "name_zh": "教皇",
+      "name_en": "The Hierophant",
+      "arcana": "major",
+      "suit": null,
+      "number": 5,
+      "element": null,
+      "keywords_upright": [
+        "傳統",
+        "學習",
+        "指引",
+        "共同價值",
+        "制度"
+      ],
+      "keywords_reversed": [
+        "打破常規",
+        "盲從",
+        "質疑權威",
+        "另闢蹊徑"
+      ],
+      "meaning_upright": "與傳統、學習和共同信念有關。你可能正在向可靠的前輩或既有的制度尋求指引，這張牌肯定經驗與傳承的價值。",
+      "meaning_reversed": "是時候質疑既有的規則，找出適合自己的做法；也提醒你不要只是因為大家都這樣，就盲目遵從。",
+      "image": "cards/major_05.webp",
+      "image_prompt": "A hierophant in rich ceremonial robes seated between two stone pillars, wearing a triple-tiered crown, one hand raised in blessing and the other holding a tall triple-crossed staff. Two crossed keys lie at his feet, two small kneeling figures in robes before him. Calm sacred hall lit by warm gold light.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Marriage, alliance, captivity, servitude; by another account, mercy and goodness; inspiration; the man to whom the Querent has recourse.",
+        "waite_reversed_en": "Society, good understanding, concord, overkindness, weakness."
+      },
+      "review_note": "韋特原文正位偏向 marriage, alliance, captivity, servitude（婚姻、結盟、束縛），這裡採現代的傳統與指引解讀。"
+    },
+    {
+      "id": "major_06",
+      "name_zh": "戀人",
+      "name_en": "The Lovers",
+      "arcana": "major",
+      "suit": null,
+      "number": 6,
+      "element": null,
+      "keywords_upright": [
+        "關係",
+        "選擇",
+        "價值觀",
+        "和諧",
+        "真心"
+      ],
+      "keywords_reversed": [
+        "價值衝突",
+        "猶豫不決",
+        "關係失衡",
+        "逃避選擇"
+      ],
+      "meaning_upright": "這張牌談的不只是愛情，更是依照自己的價值做出真心的選擇。你可能正面對一個需要誠實面對自己的決定，或一段重要的關係。",
+      "meaning_reversed": "價值觀或期待出現落差，或是在選擇面前猶豫、逃避。值得問問自己：真正想要的是什麼？彼此是否都足夠坦誠？",
+      "image": "cards/major_06.webp",
+      "image_prompt": "Two figures in flowing robes standing apart in a lush garden under a huge radiant angel with red wings floating in the clouds above them, hands outstretched in blessing. Behind the woman a tree with fruit and a coiled serpent; behind the man a tree with flame-like leaves. A tall mountain glows between them in the distance. Tender, romantic, modest.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Attraction, love, beauty, trials overcome.",
+        "waite_reversed_en": "Failure, foolish designs. Another account speaks of marriage frustrated and contrarieties of all kinds."
+      }
+    },
+    {
+      "id": "major_07",
+      "name_zh": "戰車",
+      "name_en": "The Chariot",
+      "arcana": "major",
+      "suit": null,
+      "number": 7,
+      "element": null,
+      "keywords_upright": [
+        "決心",
+        "勝利",
+        "自律",
+        "前進",
+        "掌控方向"
+      ],
+      "keywords_reversed": [
+        "失控",
+        "方向分歧",
+        "攻擊性",
+        "缺乏動力"
+      ],
+      "meaning_upright": "你正在以堅定的意志駕馭相互拉扯的力量，朝目標前進。這張牌提醒你，成功來自把分散的力氣導向同一個方向。",
+      "meaning_reversed": "內在或外在的力量互相拉扯，讓你失去方向，或是過於強硬而衝撞身邊的人。先停下來確認要去的地方，再重新握穩韁繩。",
+      "image": "cards/major_07.webp",
+      "image_prompt": "A crowned warrior in star-patterned armor standing in a chariot under a canopy of stars, holding a wand, with no reins. Two sphinxes, one black and one white, rest in front of the chariot. A walled city and a river behind. Determined and victorious mood.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Succour, providence also war, triumph, presumption, vengeance, trouble.",
+        "waite_reversed_en": "Riot, quarrel, dispute, litigation, defeat."
+      }
+    },
+    {
+      "id": "major_08",
+      "name_zh": "力量",
+      "name_en": "Strength",
+      "arcana": "major",
+      "suit": null,
+      "number": 8,
+      "element": null,
+      "keywords_upright": [
+        "勇氣",
+        "耐心",
+        "溫柔的力量",
+        "自我掌控"
+      ],
+      "keywords_reversed": [
+        "自我懷疑",
+        "軟弱",
+        "壓抑",
+        "過度強硬"
+      ],
+      "meaning_upright": "真正的力量不是壓制，而是帶著耐心與溫柔去面對內在的野性。這張牌鼓勵你相信自己有承受困難的能力。",
+      "meaning_reversed": "自信暫時動搖，或是用強硬、壓抑的方式處理情緒。可能需要的是接納自己的脆弱，而不是逼自己更用力。",
+      "image": "cards/major_08.webp",
+      "image_prompt": "A calm woman in a white gown with a garland of flowers, a glowing sideways figure-eight above her head, gently holding and closing the jaws of a golden lion that bows to her. Soft hills and a distant blue mountain behind. Quiet, gentle strength.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Power, energy, action, courage, magnanimity; also complete success and honours.",
+        "waite_reversed_en": "Despotism, abuse if power, weakness, discord, sometimes even disgrace."
+      }
+    },
+    {
+      "id": "major_09",
+      "name_zh": "隱者",
+      "name_en": "The Hermit",
+      "arcana": "major",
+      "suit": null,
+      "number": 9,
+      "element": null,
+      "keywords_upright": [
+        "內省",
+        "獨處",
+        "尋求真理",
+        "智慧",
+        "沉澱"
+      ],
+      "keywords_reversed": [
+        "孤立",
+        "逃避",
+        "過度封閉",
+        "拒絕指引"
+      ],
+      "meaning_upright": "這是向內探索的時刻。暫時離開喧囂，獨自整理想法，你可能會找到屬於自己的方向。",
+      "meaning_reversed": "獨處變成了孤立，或是用封閉來逃避與人接觸。值得想想：你需要的是安靜的整理，還是有人一起面對？",
+      "image": "cards/major_09.webp",
+      "image_prompt": "An old hooded figure in a long gray cloak standing alone on a snowy mountain peak under a night sky, holding a lantern that glows with a six-pointed star, and a tall staff in the other hand. Deep, silent landscape with distant cold peaks. Solitary and wise.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Prudence, circumspection; also and especially treason, dissimulation, roguery, corruption.",
+        "waite_reversed_en": "Concealment, disguise, policy, fear, unreasoned caution."
+      },
+      "review_note": "韋特原文正位含 treason, dissimulation, roguery, corruption（背叛、欺瞞、無賴、腐敗），與現代的內省解讀差異很大。"
+    },
+    {
+      "id": "major_10",
+      "name_zh": "命運之輪",
+      "name_en": "Wheel of Fortune",
+      "arcana": "major",
+      "suit": null,
+      "number": 10,
+      "element": null,
+      "keywords_upright": [
+        "循環",
+        "轉機",
+        "變動",
+        "時機",
+        "順勢而為"
+      ],
+      "keywords_reversed": [
+        "抗拒改變",
+        "運氣低潮",
+        "失去掌控",
+        "重複的模式"
+      ],
+      "meaning_upright": "事情正在轉動，沒有任何狀態會永遠不變。這張牌提醒你順應週期，在變化中看見新的機會。",
+      "meaning_reversed": "可能覺得事情不如預期、運氣不佳，或一再重複同樣的模式。值得留意：哪些是外在的變動，哪些是自己能調整的部分？",
+      "image": "cards/major_10.webp",
+      "image_prompt": "A great golden wheel floating in a swirling sky, ringed with abstract alchemical glyphs (no readable letters). On top a seated sphinx holding a sword, on the right a jackal-headed figure rising, on the left a serpent sinking. In the four corners of the cloud four winged beings, an angel, an eagle, a bull and a lion, each reading an open book.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Destiny, fortune, success, elevation, luck, felicity.",
+        "waite_reversed_en": "Increase, abundance, superfluity."
+      }
+    },
+    {
+      "id": "major_11",
+      "name_zh": "正義",
+      "name_en": "Justice",
+      "arcana": "major",
+      "suit": null,
+      "number": 11,
+      "element": null,
+      "keywords_upright": [
+        "公平",
+        "真相",
+        "因果",
+        "責任",
+        "清晰的判斷"
+      ],
+      "keywords_reversed": [
+        "不公",
+        "逃避責任",
+        "偏見",
+        "失衡"
+      ],
+      "meaning_upright": "事情會被誠實地衡量。這張牌提醒你依事實做出公平的判斷，並為自己的選擇負責。",
+      "meaning_reversed": "可能遇到不公平的對待，或是自己帶著偏見、逃避責任。值得重新審視：自己是否看清了全部的事實？",
+      "image": "cards/major_11.webp",
+      "image_prompt": "A crowned figure in red robes seated on a throne between two stone pillars with a purple veil behind, holding an upright sword in the right hand and a pair of balanced scales in the left. Solemn, fair, quiet atmosphere with a soft glow around the scales.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Equity, rightness, probity, executive; triumph of the deserving side in law.",
+        "waite_reversed_en": "Law in all its departments, legal complications, bigotry, bias, excessive severity."
+      }
+    },
+    {
+      "id": "major_12",
+      "name_zh": "倒吊人",
+      "name_en": "The Hanged Man",
+      "arcana": "major",
+      "suit": null,
+      "number": 12,
+      "element": null,
+      "keywords_upright": [
+        "暫停",
+        "換個角度",
+        "放下",
+        "犧牲",
+        "等待"
+      ],
+      "keywords_reversed": [
+        "拖延",
+        "無謂的犧牲",
+        "抗拒放手",
+        "停滯"
+      ],
+      "meaning_upright": "有時候停下來，反而能看到不同的風景。這張牌邀請你放下急著要結果的心，用新的角度理解眼前的處境。",
+      "meaning_reversed": "停滯可能不是在醞釀，而是在拖延；或是付出了很多卻沒有意義的犧牲。值得問問自己：你是在等待時機，還是在躲避決定？",
+      "image": "cards/major_12.webp",
+      "image_prompt": "A figure hanging upside down by one foot from a living, leafy T-shaped tree, the other leg bent behind, hands tied behind the back, with a calm peaceful face and a golden halo around the head. Pale dawn sky behind. Suspended, serene, still.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Wisdom, circumspection, discernment, trials, sacrifice, intuition, divination, prophecy.",
+        "waite_reversed_en": "Selfishness, the crowd, body politic."
+      }
+    },
+    {
+      "id": "major_13",
+      "name_zh": "死神",
+      "name_en": "Death",
+      "arcana": "major",
+      "suit": null,
+      "number": 13,
+      "element": null,
+      "keywords_upright": [
+        "結束",
+        "轉變",
+        "放下",
+        "重生",
+        "告別"
+      ],
+      "keywords_reversed": [
+        "抗拒結束",
+        "停滯",
+        "害怕改變",
+        "緩慢的轉變"
+      ],
+      "meaning_upright": "這張牌很少代表字面上的死亡，而是某個階段的結束。放下已經完成使命的事物，才有空間迎接新的開始。",
+      "meaning_reversed": "不願放手，讓轉變卡在半路。值得留意：你緊抓不放的是什麼？放下之後又會發生什麼？",
+      "image": "cards/major_13.webp",
+      "image_prompt": "A skeleton knight in black armor riding a white horse and carrying a black banner with a white rose. Before him a fallen king, a praying bishop in tall hat, a kneeling child and a maiden. In the far background a river and the sun rising between two tall towers. Solemn but hopeful.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "End, mortality, destruction, corruption also, for a man, the loss of a benefactor for a woman, many contrarieties; for a maid, failure of marriage projects.",
+        "waite_reversed_en": "Inertia, sleep, lethargy, petrifaction, somnambulism; hope destroyed."
+      },
+      "review_note": "韋特原文正位偏向 end, mortality, destruction（終結、必死、毀壞），這裡改為轉變與重生的語氣。"
+    },
+    {
+      "id": "major_14",
+      "name_zh": "節制",
+      "name_en": "Temperance",
+      "arcana": "major",
+      "suit": null,
+      "number": 14,
+      "element": null,
+      "keywords_upright": [
+        "平衡",
+        "調和",
+        "耐心",
+        "中庸",
+        "整合"
+      ],
+      "keywords_reversed": [
+        "失衡",
+        "極端",
+        "缺乏耐心",
+        "過度"
+      ],
+      "meaning_upright": "在不同的力量之間找到適當的比例。這張牌提醒你放慢腳步，用耐心與節制，慢慢調和生活的各個面向。",
+      "meaning_reversed": "生活或情緒走向某個極端，或是操之過急。可以想想：哪一部分過多、哪一部分被忽略了？",
+      "image": "cards/major_14.webp",
+      "image_prompt": "A tall winged angel with a golden halo, one foot on land and one foot in a calm pond, pouring water between two cups. A winding path leads to distant mountains with a glowing golden crown of light above them. Irises bloom at the water's edge. Balanced, soft, flowing.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Economy, moderation, frugality, management, accommodation.",
+        "waite_reversed_en": "Things connected with churches, religions, sects, the priesthood, sometimes even the priest who will marry the Querent; also disunion, unfortunate combinations, competing interests."
+      }
+    },
+    {
+      "id": "major_15",
+      "name_zh": "惡魔",
+      "name_en": "The Devil",
+      "arcana": "major",
+      "suit": null,
+      "number": 15,
+      "element": null,
+      "keywords_upright": [
+        "執著",
+        "誘惑",
+        "慾望",
+        "束縛",
+        "陰影面"
+      ],
+      "keywords_reversed": [
+        "掙脫",
+        "覺察",
+        "解放",
+        "面對恐懼"
+      ],
+      "meaning_upright": "這張牌提醒你留意那些讓你感到被綁住的東西，可能是習慣、慾望或恐懼。很多束縛其實是鬆動的，看見它，就是第一步。",
+      "meaning_reversed": "你開始覺察並試著擺脫某種依賴或限制，過程可能不輕鬆，但這是重新取回自主權的時刻。",
+      "image": "cards/major_15.webp",
+      "image_prompt": "A horned, bat-winged goat-headed figure squatting on a black stone pedestal, holding an upward torch, with an inverted fiery star above. Two small horned and tailed figures chained loosely at the neck at its feet, the chains are slack enough to slip off. Dark red-black cave, ominous but subtle.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Ravage, violence, vehemence, extraordinary efforts, force, fatality; that which is predestined but is not for this reason evil.",
+        "waite_reversed_en": "Evil fatality, weakness, pettiness, blindness."
+      },
+      "review_note": "韋特原文正位為 ravage, violence, fatality（破壞、暴力、宿命），這裡改為執著與束縛的現代解讀。"
+    },
+    {
+      "id": "major_16",
+      "name_zh": "高塔",
+      "name_en": "The Tower",
+      "arcana": "major",
+      "suit": null,
+      "number": 16,
+      "element": null,
+      "keywords_upright": [
+        "突發的變動",
+        "崩解",
+        "真相揭露",
+        "衝擊",
+        "重建"
+      ],
+      "keywords_reversed": [
+        "逃避衝擊",
+        "延遲的崩解",
+        "害怕改變",
+        "餘波"
+      ],
+      "meaning_upright": "建立在不穩基礎上的東西突然崩塌。這張牌很震撼，卻也常帶來真相與釋放，讓你有機會重新蓋得更穩固。",
+      "meaning_reversed": "可能是在避免一場該發生的改變，或是正走在變動之後的餘波裡。值得想想：哪個已經搖晃的結構，你還在勉強撐著？",
+      "image": "cards/major_16.webp",
+      "image_prompt": "A tall stone tower on a cliff struck by a bolt of lightning, the crown at the top blown off and flames bursting from the windows. Two figures falling headfirst through the dark sky, glowing sparks falling like rain. Dramatic, stormy, black sky.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Misery, distress, indigence, adversity, calamity, disgrace, deception, ruin. It is a card in particular of unforeseen catastrophe.",
+        "waite_reversed_en": "According to one account, the same in a lesser degree also oppression, imprisonment, tyranny."
+      },
+      "review_note": "韋特原文正位為 misery, distress, ruin（悲慘、困苦、毀滅），這裡保留衝擊感，但加入揭露與重建的角度。"
+    },
+    {
+      "id": "major_17",
+      "name_zh": "星星",
+      "name_en": "The Star",
+      "arcana": "major",
+      "suit": null,
+      "number": 17,
+      "element": null,
+      "keywords_upright": [
+        "希望",
+        "療癒",
+        "信心",
+        "靈感",
+        "平靜"
+      ],
+      "keywords_reversed": [
+        "失望",
+        "信心不足",
+        "失去方向",
+        "疲憊"
+      ],
+      "meaning_upright": "風暴之後的寧靜與希望。這張牌提醒你，療癒正在發生，保持開放與信任，會看見前方的亮光。",
+      "meaning_reversed": "可能感到失望，或對未來缺乏信心。這時需要的不是更用力，而是先好好休息，慢慢找回對自己的信任。",
+      "image": "cards/major_17.webp",
+      "image_prompt": "A woman kneeling at the edge of a quiet pool, pouring water from two jugs, one onto the land and one into the pool, glowing sparkles. Above her one very large eight-pointed golden star surrounded by seven smaller stars, a bird in a tree nearby. Peaceful, hopeful, calm night.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Loss, theft, privation, abandonment; another reading says-hope and bright prospects,",
+        "waite_reversed_en": "Arrogance, haughtiness, impotence."
+      },
+      "review_note": "韋特原文正位為 loss, theft, privation, abandonment，但也記下另一種說法 hope and bright prospects，這裡採後者與現代解讀。"
+    },
+    {
+      "id": "major_18",
+      "name_zh": "月亮",
+      "name_en": "The Moon",
+      "arcana": "major",
+      "suit": null,
+      "number": 18,
+      "element": null,
+      "keywords_upright": [
+        "不確定",
+        "幻象",
+        "潛意識",
+        "直覺",
+        "不安"
+      ],
+      "keywords_reversed": [
+        "真相浮現",
+        "釋放恐懼",
+        "困惑",
+        "逐漸看清"
+      ],
+      "meaning_upright": "光線不明，事情看起來並不如表面。這張牌提醒你，目前的不安或困惑可能混入了想像，先別急著下結論。",
+      "meaning_reversed": "迷霧開始散去，隱藏的事情逐漸清楚；也可能是仍困在混亂裡，需要把恐懼說出口。",
+      "image": "cards/major_18.webp",
+      "image_prompt": "A full moon with a serene face shining between two tall stone towers, drops of golden light falling. A dog and a wolf howling at the moon from either side of a winding path, a crayfish crawling out of a dark pool in the foreground. The path leads to distant mountains. Dreamy, uncertain.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Hidden enemies, danger, calumny, darkness, terror, deception, occult forces, error.",
+        "waite_reversed_en": "Instability, inconstancy, silence, lesser degrees of deception and error."
+      }
+    },
+    {
+      "id": "major_19",
+      "name_zh": "太陽",
+      "name_en": "The Sun",
+      "arcana": "major",
+      "suit": null,
+      "number": 19,
+      "element": null,
+      "keywords_upright": [
+        "快樂",
+        "成功",
+        "活力",
+        "清晰",
+        "單純"
+      ],
+      "keywords_reversed": [
+        "暫時的陰霾",
+        "過度樂觀",
+        "延遲的喜悅",
+        "能量不足"
+      ],
+      "meaning_upright": "一個充滿光亮與正能量的時刻。這張牌代表單純的快樂、清楚的方向，以及值得好好享受的成果。",
+      "meaning_reversed": "快樂被暫時遮住，或是期待過高而失望。光並沒有消失，只是需要調整心態，重新看見簡單的美好。",
+      "image": "cards/major_19.webp",
+      "image_prompt": "A laughing child with curly hair and a laurel wreath, arms raised joyfully, riding a white horse with gold tack. A long red-orange ribbon streams in the wind. Behind them a huge radiant golden sun with wavy rays fills the upper half of the canvas. Rows of tall sunflowers in the foreground. Warm, joyful, glowing atmosphere, the one card with a lighter golden palette.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Material happiness, fortunate marriage, contentment.",
+        "waite_reversed_en": "The same in a lesser sense."
+      }
+    },
+    {
+      "id": "major_20",
+      "name_zh": "審判",
+      "name_en": "Judgement",
+      "arcana": "major",
+      "suit": null,
+      "number": 20,
+      "element": null,
+      "keywords_upright": [
+        "覺醒",
+        "回顧",
+        "召喚",
+        "重新評估",
+        "寬恕"
+      ],
+      "keywords_reversed": [
+        "自我批評",
+        "逃避回顧",
+        "猶豫",
+        "拒絕召喚"
+      ],
+      "meaning_upright": "回頭檢視走過的路，並聽見內心的召喚。這張牌提醒你，以誠實與寬容整理過去，決定要用什麼樣的自己走向下一階段。",
+      "meaning_reversed": "過度自責，或不願面對該做的檢視。也可能是聽見了內在的聲音，卻遲遲不敢回應。",
+      "image": "cards/major_20.webp",
+      "image_prompt": "A great angel with golden wings blowing a long trumpet from the clouds, a flag with a cross on the trumpet. Below, men, women and children with gray skin rising from stone coffins on the sea, arms raised toward the sound. Distant snow mountains. Solemn, awakening.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Change of position, renewal, outcome. Another account specifies total loss though lawsuit.",
+        "waite_reversed_en": "Weakness, pusillanimity, simplicity; also deliberation, decision, sentence."
+      }
+    },
+    {
+      "id": "major_21",
+      "name_zh": "世界",
+      "name_en": "The World",
+      "arcana": "major",
+      "suit": null,
+      "number": 21,
+      "element": null,
+      "keywords_upright": [
+        "完成",
+        "圓滿",
+        "整合",
+        "成就",
+        "旅程的終點"
+      ],
+      "keywords_reversed": [
+        "未竟之事",
+        "差最後一步",
+        "缺乏收尾",
+        "停在原地"
+      ],
+      "meaning_upright": "一個階段圓滿完成。這張牌代表你把過程中學到的整合起來，值得慶祝，也準備好迎接下一段旅程。",
+      "meaning_reversed": "離完成只差一步，卻遲遲沒有收尾；或是不確定下一步該往哪裡。值得想想：還缺的那一塊是什麼？",
+      "image": "cards/major_21.webp",
+      "image_prompt": "A dancing figure wrapped in a flowing purple scarf, holding a short wand in each hand, surrounded by a large oval wreath of laurel leaves tied with ribbon. In the four corners an angel, an eagle, a bull and a lion among clouds. Celebratory, complete, glowing.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Assured success, recompense, voyage, route, emigration, flight, change of place.",
+        "waite_reversed_en": "Inertia, fixity, stagnation, permanence."
+      }
+    },
+    {
+      "id": "wands_01",
+      "name_zh": "權杖王牌",
+      "name_en": "Ace of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 1,
+      "element": "火",
+      "keywords_upright": [
+        "靈感",
+        "熱情",
+        "新的起點",
+        "潛能"
+      ],
+      "keywords_reversed": [
+        "動力不足",
+        "延遲",
+        "創意受阻",
+        "錯失時機"
+      ],
+      "meaning_upright": "一股新的衝勁或靈感出現。這是開始新計畫的好時機，把心裡那把火化成具體的行動。",
+      "meaning_reversed": "熱情不足或起步遲疑，想法卡在腦中沒有動手。值得想想：是缺靈感，還是缺一個開始的理由？",
+      "image": "cards/wands_01.webp",
+      "image_prompt": "A hand reaching out of a cloud holding a thick wooden staff that is budding with fresh green leaves, some leaves falling in the air. A distant castle on a hill and a calm river valley below. Rising energy.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Creation, invention, enterprise, the powers which result in these; principle, beginning, source; birth, family, origin, and in a sense the virility which is behind them; the starting point of enterprises; according to another account, money, fortune, inheritance.",
+        "waite_reversed_en": "Fall, decadence, ruin, perdition, to perish also a certain clouded joy."
+      }
+    },
+    {
+      "id": "wands_02",
+      "name_zh": "權杖二",
+      "name_en": "Two of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 2,
+      "element": "火",
+      "keywords_upright": [
+        "規劃",
+        "做決定",
+        "眺望未來",
+        "個人的力量"
+      ],
+      "keywords_reversed": [
+        "猶豫不前",
+        "缺乏規劃",
+        "害怕離開舒適圈",
+        "眼界受限"
+      ],
+      "meaning_upright": "你站在已有的成就上，眺望更遠的地方。這張牌提醒你，好好規劃下一步，決定要去哪裡。",
+      "meaning_reversed": "擔心風險而不敢踏出舒適圈，或是沒有明確的計畫。值得釐清的是：害怕的是改變，還是不確定？",
+      "image": "cards/wands_02.webp",
+      "image_prompt": "A robed figure standing on a castle battlement at night holding a small globe in one hand and a budding wooden staff in the other, with a second staff fixed to the wall beside him. He looks out over the sea and distant mountains. Thoughtful, planning mood.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Between the alternative readings there is no marriage possible; on the one hand, riches, fortune, magnificence; on the other, physical suffering, disease, chagrin, sadness, mortification. The design gives one suggestion; here is a lord overlooking his dominion and alternately contemplating a globe; it looks like the malady, the mortification, the sadness of Alexander amidst the grandeur of this world's wealth.",
+        "waite_reversed_en": "Surprise, wonder, enchantment, emotion, trouble, fear."
+      }
+    },
+    {
+      "id": "wands_03",
+      "name_zh": "權杖三",
+      "name_en": "Three of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 3,
+      "element": "火",
+      "keywords_upright": [
+        "擴展",
+        "遠見",
+        "等待成果",
+        "合作"
+      ],
+      "keywords_reversed": [
+        "受阻",
+        "延遲",
+        "計畫落空",
+        "缺乏遠見"
+      ],
+      "meaning_upright": "你已經投入努力，現在看著事情向外擴展。保持遠見與耐心，成果可能正從遠方回來。",
+      "meaning_reversed": "進展比預期慢，或是計畫遇到阻礙。可以回頭看看，是準備不足，還是需要調整方向？",
+      "image": "cards/wands_03.webp",
+      "image_prompt": "A figure seen from behind, standing on a cliff with a staff in the right hand and three staffs planted in the ground, looking out at ships sailing across a golden sea at sunrise. Wide open horizon.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "He symbolizes established strength, enterprise, effort, trade, commerce, discovery; those are his ships, bearing his merchandise, which are sailing over the sea. The card also signifies able co-operation in business, as if the successful merchant prince were looking from his side towards yours with a view to help you.",
+        "waite_reversed_en": "The end of troubles, suspension or cessation of adversity, toil and disappointment."
+      }
+    },
+    {
+      "id": "wands_04",
+      "name_zh": "權杖四",
+      "name_en": "Four of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 4,
+      "element": "火",
+      "keywords_upright": [
+        "慶祝",
+        "穩定",
+        "歸屬感",
+        "和諧",
+        "階段性成果"
+      ],
+      "keywords_reversed": [
+        "不安定",
+        "缺乏歸屬",
+        "慶祝延後",
+        "團體裡的摩擦"
+      ],
+      "meaning_upright": "值得慶祝的穩定時刻，可能是完成了一個階段，或是與重要的人團聚。好好享受努力得來的安穩。",
+      "meaning_reversed": "對現況缺乏安全感，或是與身邊的人有些摩擦。值得想想：是什麼讓你無法放鬆下來？",
+      "image": "cards/wands_04.webp",
+      "image_prompt": "Four tall wooden staffs forming a canopy garlanded with flowers and fruit, two figures under it raising bouquets in celebration, a castle with a bridge in the background. Joyful, warm, festive.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "They are for once almost on the surface--country life, haven of refuge, a species of domestic harvest-home, repose, concord, harmony, prosperity, peace, and the perfected work of these.",
+        "waite_reversed_en": "The meaning remains unaltered; it is prosperity, increase, felicity, beauty, embellishment."
+      }
+    },
+    {
+      "id": "wands_05",
+      "name_zh": "權杖五",
+      "name_en": "Five of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 5,
+      "element": "火",
+      "keywords_upright": [
+        "競爭",
+        "意見不合",
+        "摩擦",
+        "各持己見"
+      ],
+      "keywords_reversed": [
+        "避免衝突",
+        "化解爭端",
+        "內在衝突",
+        "和解"
+      ],
+      "meaning_upright": "大家都想爭取自己的位置，場面有些混亂。這張牌提醒你，適度的競爭有助成長，但別忘了彼此是否朝向同一個目標。",
+      "meaning_reversed": "衝突可能趨緩，也可能被壓抑在檯面下。值得思考：要正面溝通，還是繼續迴避？",
+      "image": "cards/wands_05.webp",
+      "image_prompt": "Five young people in mock combat swinging wooden staffs at each other in a field, nobody winning, dust and motion, dynamic and chaotic composition. Clear sky with stern light.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Imitation, as, for example, sham fight, but also the strenuous competition and struggle of the search after riches and fortune. In this sense it connects with the battle of life. Hence some attributions say that it is a card of gold, gain, opulence.",
+        "waite_reversed_en": "Litigation, disputes, trickery, contradiction."
+      }
+    },
+    {
+      "id": "wands_06",
+      "name_zh": "權杖六",
+      "name_en": "Six of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 6,
+      "element": "火",
+      "keywords_upright": [
+        "勝利",
+        "肯定",
+        "自信",
+        "被看見"
+      ],
+      "keywords_reversed": [
+        "缺乏肯定",
+        "自負",
+        "害怕失敗",
+        "延遲的成功"
+      ],
+      "meaning_upright": "努力得到了公開的肯定。這張牌鼓勵你接受讚美，同時記得成功也有身邊人的支持。",
+      "meaning_reversed": "付出沒有得到預期的回應，或是過度在意別人的眼光。值得想想：自己對成功的定義是什麼？",
+      "image": "cards/wands_06.webp",
+      "image_prompt": "A rider in a laurel crown on a white horse draped in green cloth, holding a staff decorated with a laurel wreath. A crowd around him cheering and holding staffs. Victorious, bright atmosphere.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "The card has been so designed that it can cover several significations; on the surface, it is a victor triumphing, but it is also great news, such as might be carried in state by the King's courier; it is expectation crowned with its own desire, the crown of hope, and so forth.",
+        "waite_reversed_en": "Apprehension, fear, as of a victorious enemy at the gate; treachery, disloyalty, as of gates being opened to the enemy; also indefinite delay."
+      }
+    },
+    {
+      "id": "wands_07",
+      "name_zh": "權杖七",
+      "name_en": "Seven of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 7,
+      "element": "火",
+      "keywords_upright": [
+        "捍衛",
+        "堅持",
+        "站穩立場",
+        "面對挑戰"
+      ],
+      "keywords_reversed": [
+        "退讓",
+        "疲於應付",
+        "不堪重負",
+        "放棄立場"
+      ],
+      "meaning_upright": "你站在有利的位置，卻要面對來自各方的挑戰。這張牌提醒你，守住自己的立場，不需要證明給每個人看。",
+      "meaning_reversed": "壓力太大，感到疲憊而想要退讓。並不是所有的戰場都值得留下，值得想想：哪些值得守，哪些可以放手？",
+      "image": "cards/wands_07.webp",
+      "image_prompt": "A figure standing on a hilltop in mismatched boots, holding a staff in a defending stance, looking down at six wooden staffs rising from below to attack. Determined, standing alone.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "It is a card of valour, for, on the surface, six are attacking one, who has, however, the vantage position. On the intellectual plane, it signifies discussion, wordy strife; in business--negotiations, war of trade, barter, competition. It is further a card of success, for the combatant is on the top and his enemies may be unable to reach him.",
+        "waite_reversed_en": "Perplexity, embarrassments, anxiety. It is also a caution against indecision."
+      }
+    },
+    {
+      "id": "wands_08",
+      "name_zh": "權杖八",
+      "name_en": "Eight of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 8,
+      "element": "火",
+      "keywords_upright": [
+        "迅速進展",
+        "行動",
+        "消息",
+        "順利推進"
+      ],
+      "keywords_reversed": [
+        "延誤",
+        "混亂",
+        "急躁",
+        "溝通不良"
+      ],
+      "meaning_upright": "事情開始加速，消息與行動密集到來。這張牌提醒你把握動能，快速但不失方向地推進。",
+      "meaning_reversed": "進度停滯、訊息混亂，或是過於急躁而出錯。欲速則不達，先放慢一點，把重點整理清楚，再繼續往前。",
+      "image": "cards/wands_08.webp",
+      "image_prompt": "Eight budding wooden staffs flying diagonally through a clear sky above a green river valley and a distant house, parallel and fast, no people. Speed and arrival.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Activity in undertakings, the path of such activity, swiftness, as that of an express messenger; great haste, great hope, speed towards an end which promises assured felicity; generally, that which is on the move; also the arrows of love.",
+        "waite_reversed_en": "Arrows of jealousy, internal dispute, stingings of conscience, quarrels; and domestic disputes for persons who are married."
+      }
+    },
+    {
+      "id": "wands_09",
+      "name_zh": "權杖九",
+      "name_en": "Nine of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 9,
+      "element": "火",
+      "keywords_upright": [
+        "堅韌",
+        "警戒",
+        "最後一哩路",
+        "經驗"
+      ],
+      "keywords_reversed": [
+        "疲憊",
+        "防備過度",
+        "想放棄",
+        "舊傷"
+      ],
+      "meaning_upright": "你已經走過許多挑戰，雖然疲憊，但仍然站著。再撐一下，同時留意自己是否需要休息。",
+      "meaning_reversed": "累積的疲勞讓人想放棄，或是過於警戒而不敢信任。值得想想：是該堅持，還是該讓自己喘口氣？",
+      "image": "cards/wands_09.webp",
+      "image_prompt": "A wounded figure with a bandaged head leaning on a staff, watching warily over his shoulder, with eight staffs standing in a row like a fence behind him. Tired but unyielding.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "The card signifies strength in opposition. If attacked, the person will meet an onslaught boldly; and his build shews, that he may prove a formidable antagonist. With this main significance there are all its possible adjuncts--delay, suspension, adjournment.",
+        "waite_reversed_en": "Obstacles, adversity, calamity."
+      }
+    },
+    {
+      "id": "wands_10",
+      "name_zh": "權杖十",
+      "name_en": "Ten of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 10,
+      "element": "火",
+      "keywords_upright": [
+        "重擔",
+        "責任",
+        "過度負荷",
+        "接近終點"
+      ],
+      "keywords_reversed": [
+        "放下負擔",
+        "卸責",
+        "瀕臨極限",
+        "學會分擔"
+      ],
+      "meaning_upright": "你扛著太多事了，雖然離目的地不遠，但負荷也很重。值得問問自己：這些責任，真的都需要由你一個人來扛嗎？",
+      "meaning_reversed": "開始學著放下或分擔，也可能是已經到了極限。重點在於：把不屬於你的重擔放下來。",
+      "image": "cards/wands_10.webp",
+      "image_prompt": "A bent figure carrying a heavy bundle of ten wooden staffs on the back, walking toward a small village in the distance at dusk. Heavy burden, close to home.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "A card of many significances, and some of the readings cannot be harmonized. I set aside that which connects it with honour and good faith. The chief meaning is oppression simply, but it is also fortune, gain, any kind of success, and then it is the oppression of these things. It is also a card of false-seeming, disguise, perfidy. The place which the figure is approaching may suffer from the rods that he carries. Success is stultified if the Nine of Swords follows, and if it is a question of a lawsuit, there will be certain loss.",
+        "waite_reversed_en": "Contrarieties, difficulties, intrigues, and their analogies."
+      }
+    },
+    {
+      "id": "wands_11",
+      "name_zh": "權杖侍者",
+      "name_en": "Page of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 11,
+      "element": "火",
+      "keywords_upright": [
+        "好奇",
+        "熱情",
+        "探索",
+        "新消息"
+      ],
+      "keywords_reversed": [
+        "三分鐘熱度",
+        "缺乏方向",
+        "魯莽",
+        "壞消息"
+      ],
+      "meaning_upright": "帶著好奇與熱情的新人，也可能是一則帶來新機會的消息。保持開放的心，嘗試新的事物。",
+      "meaning_reversed": "興致來得快去得也快，或是缺乏堅持。值得想想：這份熱情，有沒有一個能持續的方向？",
+      "image": "cards/wands_11.webp",
+      "image_prompt": "A young page in a patterned tunic and feathered hat standing in a desert landscape, holding a budding staff and looking at its tip with curiosity. Dunes and a small pyramid-like hill in the distance.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Dark young man, faithful, a lover, an envoy, a postman. Beside a man, he will bear favourable testimony concerning him. A dangerous rival, if followed by the Page of Cups. Has the chief qualities of his suit. He may signify family intelligence.",
+        "waite_reversed_en": "Anecdotes, announcements, evil news. Also indecision and the instability which accompanies it."
+      }
+    },
+    {
+      "id": "wands_12",
+      "name_zh": "權杖騎士",
+      "name_en": "Knight of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 12,
+      "element": "火",
+      "keywords_upright": [
+        "行動力",
+        "冒險",
+        "衝勁",
+        "遠行",
+        "熱情"
+      ],
+      "keywords_reversed": [
+        "急躁",
+        "衝動",
+        "半途而廢",
+        "不穩定"
+      ],
+      "meaning_upright": "充滿能量，隨時準備出發。這張牌帶來行動力與冒險精神，也可能代表一次搬遷或旅行；記得在衝刺之前先確認方向。",
+      "meaning_reversed": "衝勁過頭而顯得急躁，或是做事虎頭蛇尾、熱度很快退去。放慢速度，確認方向後再行動。",
+      "image": "cards/wands_12.webp",
+      "image_prompt": "A knight in armor and a surcoat patterned with small salamanders, riding a rearing horse across a desert, holding a budding staff. Pyramids far in the background. Energetic, eager to go.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Departure, absence, flight, emigration. A dark young man, friendly. Change of residence.",
+        "waite_reversed_en": "Rupture, division, interruption, discord,"
+      },
+      "review_note": "韋特原文逆位在 discord, 處中斷（來源網頁本身截斷），這裡的逆位依現代解讀撰寫。"
+    },
+    {
+      "id": "wands_13",
+      "name_zh": "權杖皇后",
+      "name_en": "Queen of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 13,
+      "element": "火",
+      "keywords_upright": [
+        "自信",
+        "溫暖",
+        "魅力",
+        "獨立",
+        "熱情"
+      ],
+      "keywords_reversed": [
+        "缺乏安全感",
+        "嫉妒",
+        "情緒化",
+        "控制欲"
+      ],
+      "meaning_upright": "散發自信與魅力，並懂得用熱情感染別人。這張牌鼓勵你做自己，以真誠的方式展現光芒。",
+      "meaning_reversed": "自信動搖，容易嫉妒或情緒起伏。值得想想：你需要的肯定，是從別人身上，還是從自己身上？",
+      "image": "cards/wands_13.webp",
+      "image_prompt": "A confident queen on a throne carved with lions, holding a sunflower in one hand and a budding staff in the other, a black cat at her feet. Orange-gold gown, desert backdrop with distant peaks.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "A dark woman, countrywoman, friendly, chaste, loving, honourable. If the card beside her signifies a man, she is well disposed towards him; if a woman, she is interested in the Querent. Also, love of money, or a certain success in business.",
+        "waite_reversed_en": "Good, economical, obliging, serviceable. Signifies also--but in certain positions and in the neighbourhood of other cards tending in such directions--opposition, jealousy, even deceit and infidelity."
+      }
+    },
+    {
+      "id": "wands_14",
+      "name_zh": "權杖國王",
+      "name_en": "King of Wands",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 14,
+      "element": "火",
+      "keywords_upright": [
+        "領導",
+        "遠見",
+        "魄力",
+        "激勵他人"
+      ],
+      "keywords_reversed": [
+        "專橫",
+        "衝動",
+        "缺乏耐心",
+        "高壓"
+      ],
+      "meaning_upright": "有遠見也有行動力的領導者。這張牌提醒你，帶著願景與魄力，激勵身邊的人一起前進。",
+      "meaning_reversed": "領導流於專橫，或是脾氣急躁、缺乏耐心。值得想想：你是在帶領別人，還是只是在命令別人？",
+      "image": "cards/wands_14.webp",
+      "image_prompt": "A king on a throne decorated with lions and salamanders, wearing a crown and an orange cloak, holding a budding staff. Warm gold lighting, dry mountains behind. Strong, visionary.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Dark man, friendly, countryman, generally married, honest and conscientious. The card always signifies honesty, and may mean news concerning an unexpected heritage to fall in before very long.",
+        "waite_reversed_en": "Good, but severe; austere, yet tolerant."
+      }
+    },
+    {
+      "id": "cups_01",
+      "name_zh": "聖杯王牌",
+      "name_en": "Ace of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 1,
+      "element": "水",
+      "keywords_upright": [
+        "新的情感",
+        "愛",
+        "同理",
+        "直覺",
+        "滿溢"
+      ],
+      "keywords_reversed": [
+        "情感壓抑",
+        "空虛",
+        "關閉自己",
+        "錯過機會"
+      ],
+      "meaning_upright": "新的情感或直覺正在湧現，可能是一段新的關係，也可能是對自己更深的理解。敞開心去接受它。",
+      "meaning_reversed": "把感受封閉起來，或是覺得內心空空的。值得想想：是什麼讓你不敢好好感受？",
+      "image": "cards/cups_01.webp",
+      "image_prompt": "A hand reaching out of a cloud holding a golden cup that overflows with five streams of water falling into a pond covered in lotus flowers. A white dove descending with a small wafer into the cup. Calm and sacred.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "House of the true heart, joy, content, abode, nourishment, abundance, fertility; Holy Table, felicity hereof.",
+        "waite_reversed_en": "House of the false heart, mutation, instability, revolution."
+      }
+    },
+    {
+      "id": "cups_02",
+      "name_zh": "聖杯二",
+      "name_en": "Two of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 2,
+      "element": "水",
+      "keywords_upright": [
+        "連結",
+        "互相吸引",
+        "友誼",
+        "和諧",
+        "互惠"
+      ],
+      "keywords_reversed": [
+        "失衡",
+        "疏離",
+        "誤解",
+        "單方付出"
+      ],
+      "meaning_upright": "兩個人（或兩種力量）彼此看見、互相回應，建立起平等的連結。可以指愛情，也可以指友誼或合作，重點是雙方都真誠投入。",
+      "meaning_reversed": "關係中的付出與回應失去平衡，或雙方的期待沒有對上。值得留意的是，問題出在溝通，還是有一方已經在退開？",
+      "image": "cards/cups_02.webp",
+      "image_prompt": "A man and a woman facing each other, each holding a golden cup raised toward the other, wreaths on their heads. Between them a winged lion-head staff, and a house on a hill in the far distance. Mutual, balanced.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Love, passion, friendship, affinity, union, concord, sympathy, the interrelation of the sexes, and--as a suggestion apart from all offices of divination--that desire which is not in Nature, but by which Nature is sanctified.",
+        "waite_reversed_en": ""
+      },
+      "review_note": "韋特原文沒有聖杯二的逆位牌義，逆位為依這張牌的主題自行撰寫。"
+    },
+    {
+      "id": "cups_03",
+      "name_zh": "聖杯三",
+      "name_en": "Three of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 3,
+      "element": "水",
+      "keywords_upright": [
+        "友誼",
+        "慶祝",
+        "分享",
+        "社群",
+        "歡聚"
+      ],
+      "keywords_reversed": [
+        "過度放縱",
+        "小圈子",
+        "流言",
+        "孤立"
+      ],
+      "meaning_upright": "與朋友一起分享喜悅的時刻，這張牌慶祝連結與支持。好好享受和別人一起的快樂。",
+      "meaning_reversed": "聚會變得太過頭、有人被排擠，或是團體裡有些流言。值得留意：身邊的關係是否讓你感到被接納？",
+      "image": "cards/cups_03.webp",
+      "image_prompt": "Three women in flowing gowns and flower garlands dancing in a circle, raising golden cups in a toast. Fruits and pumpkins at their feet in a harvest garden. Joyful celebration.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "The conclusion of any matter in plenty, perfection and merriment; happy issue, victory, fulfilment, solace, healing,",
+        "waite_reversed_en": "Expedition, dispatch, achievement, end. It signifies also the side of excess in physical enjoyment, and the pleasures of the senses."
+      }
+    },
+    {
+      "id": "cups_04",
+      "name_zh": "聖杯四",
+      "name_en": "Four of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 4,
+      "element": "水",
+      "keywords_upright": [
+        "倦怠",
+        "沉思",
+        "不滿足",
+        "錯過邀請"
+      ],
+      "keywords_reversed": [
+        "重新振作",
+        "開始行動",
+        "覺察",
+        "接受新機會"
+      ],
+      "meaning_upright": "你對眼前的一切提不起勁，沒有看見遞過來的機會。這張牌提醒你，停下來想想，是真的不需要，還是被情緒蒙蔽了。",
+      "meaning_reversed": "從倦怠中醒來，開始注意到身邊原本被忽略的可能，也準備好採取行動。這是重新對生活產生興趣的時刻。",
+      "image": "cards/cups_04.webp",
+      "image_prompt": "A young man sitting under a tree with arms crossed, looking down at three golden cups in front of him. A hand from a cloud offers a fourth cup, which he doesn't notice. Quiet green landscape, bored and withdrawn.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Weariness, disgust, aversion, imaginary vexations, as if the wine of this world had caused satiety only; another wine, as if a fairy gift, is now offered the wastrel, but he sees no consolation therein. This is also a card of blended pleasure.",
+        "waite_reversed_en": "Novelty, presage, new instruction, new relations."
+      }
+    },
+    {
+      "id": "cups_05",
+      "name_zh": "聖杯五",
+      "name_en": "Five of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 5,
+      "element": "水",
+      "keywords_upright": [
+        "失落",
+        "悲傷",
+        "遺憾",
+        "仍然留下的"
+      ],
+      "keywords_reversed": [
+        "走出悲傷",
+        "接受",
+        "重新看見剩下的",
+        "放下"
+      ],
+      "meaning_upright": "你正專注於失去的部分。這張牌承認悲傷是真實的，同時提醒你：身後還有兩只沒倒的杯子。",
+      "meaning_reversed": "開始接受失去，把目光轉向還擁有的東西。療癒需要時間，不必勉強自己快點好起來。",
+      "image": "cards/cups_05.webp",
+      "image_prompt": "A cloaked figure in black, seen from behind, looking at three spilled cups on the ground, while two upright cups stand behind him, unnoticed. A river flows beside, a bridge and a distant castle on the other side. Gloomy sky.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "It is a card of loss, but something remains over; three have been taken, but two are left; it is a card of inheritance, patrimony, transmission, but not corresponding to expectations; with some interpreters it is a card of marriage, but not without bitterness or frustration.",
+        "waite_reversed_en": "News, alliances, affinity, consanguinity, ancestry, return, false projects."
+      }
+    },
+    {
+      "id": "cups_06",
+      "name_zh": "聖杯六",
+      "name_en": "Six of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 6,
+      "element": "水",
+      "keywords_upright": [
+        "懷舊",
+        "童年",
+        "純真",
+        "善意",
+        "重逢"
+      ],
+      "keywords_reversed": [
+        "活在過去",
+        "難以放下",
+        "不成熟",
+        "回憶的包袱"
+      ],
+      "meaning_upright": "與過去有關的美好回憶，或舊友重逢。這張牌帶來溫暖與純粹的善意，也提醒你從過去汲取力量。",
+      "meaning_reversed": "沉溺於過去，或是被舊的回憶綁住。值得想想：回頭看是為了汲取力量，還是為了逃避現在？",
+      "image": "cards/cups_06.webp",
+      "image_prompt": "Two children in an old village courtyard, one offering a cup full of white flowers to the other. Six golden cups filled with flowers around them, soft sunlit stone houses. Nostalgic, innocent.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "A card of the past and of memories, looking back, as--for example--on childhood; happiness, enjoyment, but coming rather from the past; things that have vanished. Another reading reverses this, giving new relations, new knowledge, new environment, and then the children are disporting in an unfamiliar precinct.",
+        "waite_reversed_en": "The future, renewal, that which will come to pass presently."
+      }
+    },
+    {
+      "id": "cups_07",
+      "name_zh": "聖杯七",
+      "name_en": "Seven of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 7,
+      "element": "水",
+      "keywords_upright": [
+        "幻想",
+        "選擇太多",
+        "白日夢",
+        "想像力",
+        "不切實際"
+      ],
+      "keywords_reversed": [
+        "看清現實",
+        "做出決定",
+        "意志",
+        "付諸行動"
+      ],
+      "meaning_upright": "眼前有太多誘人的可能，每一個都閃閃發光，卻不一定經得起檢驗。想像力是禮物，但只停在想像裡，什麼都不會落地。",
+      "meaning_reversed": "從選項的迷霧中回到現實，開始把欲望變成意志、把念頭變成計畫。重點不再是想要什麼，而是願意為哪一個付出行動。",
+      "image": "cards/cups_07.webp",
+      "image_prompt": "A silhouette of a person facing seven golden cups floating on clouds, each cup holding a different vision: a jewel, a castle, a laurel wreath, a dragon, a veiled figure, a snake and a glowing mist. Dreamlike, glittering.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Fairy favours, images of reflection, sentiment, imagination, things seen in the glass of contemplation; some attainment in these degrees, but nothing permanent or substantial is suggested.",
+        "waite_reversed_en": "Desire, will, determination, project."
+      }
+    },
+    {
+      "id": "cups_08",
+      "name_zh": "聖杯八",
+      "name_en": "Eight of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 8,
+      "element": "水",
+      "keywords_upright": [
+        "離開",
+        "尋找更深的意義",
+        "放下",
+        "不再滿足"
+      ],
+      "keywords_reversed": [
+        "猶豫要不要離開",
+        "逃避",
+        "流連不去",
+        "迷惘"
+      ],
+      "meaning_upright": "你選擇離開表面上看似完整的處境，去尋找更有意義的事。這是需要勇氣的決定，也是對自己誠實。",
+      "meaning_reversed": "明知道不適合卻遲遲不離開，或是想離開卻不知道要去哪裡。值得想想：是什麼讓你留下？",
+      "image": "cards/cups_08.webp",
+      "image_prompt": "A cloaked figure with a staff walking away from eight stacked golden cups, heading up a rocky path toward dark mountains. A large moon with a face in the night sky. Quiet departure.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "The card speaks for itself on the surface, but other readings are entirely antithetical--giving joy, mildness, timidity, honour, modesty. In practice, it is usually found that the card shews the decline of a matter, or that a matter which has been thought to be important is really of slight consequence--either for good or evil.",
+        "waite_reversed_en": "Great joy, happiness, feasting."
+      }
+    },
+    {
+      "id": "cups_09",
+      "name_zh": "聖杯九",
+      "name_en": "Nine of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 9,
+      "element": "水",
+      "keywords_upright": [
+        "滿足",
+        "願望實現",
+        "享受",
+        "自得"
+      ],
+      "keywords_reversed": [
+        "過度自滿",
+        "空虛的滿足",
+        "物質主義",
+        "願望落空"
+      ],
+      "meaning_upright": "心願得到滿足的時刻，也是享受成果的好時機。這張牌提醒你，感謝並好好品味自己所擁有的。",
+      "meaning_reversed": "得到了想要的卻不覺得快樂，或是過度沉溺在享受中。值得想想：真正讓你感到滿足的是什麼？",
+      "image": "cards/cups_09.webp",
+      "image_prompt": "A satisfied, well-dressed man seated on a bench with arms crossed, nine golden cups on a curved shelf behind him, a blue curtain behind. Contentment, comfort, warm lamplight.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Concord, contentment, physical bien-être; also victory, success, advantage; satisfaction for the Querent or person for whom the consultation is made.",
+        "waite_reversed_en": "Truth, loyalty, liberty; but the readings vary and include mistakes, imperfections, etc."
+      }
+    },
+    {
+      "id": "cups_10",
+      "name_zh": "聖杯十",
+      "name_en": "Ten of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 10,
+      "element": "水",
+      "keywords_upright": [
+        "圓滿",
+        "家庭",
+        "和諧",
+        "情感的歸屬",
+        "幸福"
+      ],
+      "keywords_reversed": [
+        "家庭失和",
+        "期待落差",
+        "表面的和諧",
+        "價值衝突"
+      ],
+      "meaning_upright": "情感上的滿足與歸屬。這張牌代表與重要的人共享的幸福，以及彼此間的和諧。",
+      "meaning_reversed": "理想中的幸福與現實有落差，或是表面和諧底下有未說出口的事。值得坦誠地聊聊彼此的期待。",
+      "image": "cards/cups_10.webp",
+      "image_prompt": "A couple with arms raised in joy under a rainbow of ten golden cups arching across the sky, two children dancing beside them, and a cottage by a river and trees behind. Peaceful family happiness.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Contentment, repose of the entire heart; the perfection of that state; also perfection of human love and friendship; if with several picture-cards, a person who is taking charge of the Querent's interests; also the town, village or country inhabited by the Querent.",
+        "waite_reversed_en": "Repose of the false heart, indignation, violence."
+      }
+    },
+    {
+      "id": "cups_11",
+      "name_zh": "聖杯侍者",
+      "name_en": "Page of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 11,
+      "element": "水",
+      "keywords_upright": [
+        "感性",
+        "好奇",
+        "創意",
+        "溫柔的消息"
+      ],
+      "keywords_reversed": [
+        "情緒化",
+        "不成熟",
+        "壓抑感受",
+        "創意受阻"
+      ],
+      "meaning_upright": "帶著柔軟與好奇的心，或是一則帶有情感的消息。這張牌鼓勵你傾聽內心浮現的靈感與感受。",
+      "meaning_reversed": "情緒起伏較大，或是不願面對自己的感受。值得想想：有什麼感覺其實一直想被你看見？",
+      "image": "cards/cups_11.webp",
+      "image_prompt": "A young page in a flower-patterned tunic standing by the sea, holding a golden cup from which a small fish peeks out. The page looks at the fish with surprise. Gentle waves, soft light.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Fair young man, one impelled to render service and with whom the Querent will be connected; a studious youth; news, message; application, reflection, meditation; also these things directed to business.",
+        "waite_reversed_en": "Taste, inclination, attachment, seduction, deception, artifice."
+      }
+    },
+    {
+      "id": "cups_12",
+      "name_zh": "聖杯騎士",
+      "name_en": "Knight of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 12,
+      "element": "水",
+      "keywords_upright": [
+        "浪漫",
+        "邀請",
+        "理想",
+        "魅力",
+        "追隨內心"
+      ],
+      "keywords_reversed": [
+        "不切實際",
+        "情緒化",
+        "失望",
+        "逃避現實"
+      ],
+      "meaning_upright": "帶著理想與浪漫前來的人，也可能是一份邀請或提案。這張牌提醒你，跟隨心意，同時保持清醒。",
+      "meaning_reversed": "想像與現實之間有落差，或是過於情緒化。值得想想：對方（或你自己）的承諾，有多少是真的、有多少是浪漫的想像？",
+      "image": "cards/cups_12.webp",
+      "image_prompt": "A knight in armor with a winged helmet and a fish-patterned cloak riding a white horse at a slow walk, holding a golden cup forward. A calm river and rolling hills. Gentle, romantic.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Arrival, approach--sometimes that of a messenger; advances, proposition, demeanour, invitation, incitement.",
+        "waite_reversed_en": "Trickery, artifice, subtlety, swindling, duplicity, fraud."
+      }
+    },
+    {
+      "id": "cups_13",
+      "name_zh": "聖杯皇后",
+      "name_en": "Queen of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 13,
+      "element": "水",
+      "keywords_upright": [
+        "同理心",
+        "直覺",
+        "溫柔",
+        "情感成熟",
+        "照顧"
+      ],
+      "keywords_reversed": [
+        "被情緒淹沒",
+        "過度敏感",
+        "界線不清",
+        "依賴"
+      ],
+      "meaning_upright": "擁有深度的同理心與直覺，能理解別人的感受。這張牌鼓勵你信任自己的感受，同時溫柔地對待自己。",
+      "meaning_reversed": "被情緒淹沒，或是太過替別人承擔感受。值得練習的是：在關心別人的同時，守住自己的界線。",
+      "image": "cards/cups_13.webp",
+      "image_prompt": "A queen on an ornate throne shaped like a seashell at the water's edge, holding a richly decorated closed golden chalice with handles. Her gown ripples like water, pebbles at her feet. Dreamy, intuitive.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Good, fair woman; honest, devoted woman, who will do service to the Querent; loving intelligence, and hence the gift of vision; success, happiness, pleasure; also wisdom, virtue; a perfect spouse and a good mother.",
+        "waite_reversed_en": "The accounts vary; good woman; otherwise, distinguished woman but one not to be trusted; perverse woman; vice, dishonour, depravity."
+      }
+    },
+    {
+      "id": "cups_14",
+      "name_zh": "聖杯國王",
+      "name_en": "King of Cups",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 14,
+      "element": "水",
+      "keywords_upright": [
+        "情緒穩定",
+        "慈悲",
+        "成熟",
+        "圓融"
+      ],
+      "keywords_reversed": [
+        "情緒壓抑",
+        "操控",
+        "冷漠",
+        "情緒波動"
+      ],
+      "meaning_upright": "既有情感的深度，又能保持冷靜。這張牌提醒你，用成熟與包容的方式處理情緒與人際關係。",
+      "meaning_reversed": "把情緒藏得太深，或是用情緒影響他人。值得想想：你是在管理情緒，還是在壓抑情緒？",
+      "image": "cards/cups_14.webp",
+      "image_prompt": "A king on a throne floating on the sea, wearing a fish-shaped pendant, holding a golden cup in one hand and a short scepter in the other. A ship passing in the distance and a fish leaping nearby. Calm, composed.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Fair man, man of business, law, or divinity; responsible, disposed to oblige the Querent; also equity, art and science, including those who profess science, law and art; creative intelligence.",
+        "waite_reversed_en": "Dishonest, double-dealing man; roguery, exaction, injustice, vice, scandal, pillage, considerable loss."
+      }
+    },
+    {
+      "id": "swords_01",
+      "name_zh": "寶劍王牌",
+      "name_en": "Ace of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 1,
+      "element": "風",
+      "keywords_upright": [
+        "清晰",
+        "真相",
+        "突破",
+        "新想法",
+        "果斷"
+      ],
+      "keywords_reversed": [
+        "混亂",
+        "判斷模糊",
+        "言語傷人",
+        "被誤導"
+      ],
+      "meaning_upright": "思路清晰、突然看明白的時刻。這張牌提醒你，以誠實與公正的態度說出事實，做出果斷的決定。",
+      "meaning_reversed": "想法混亂或資訊不夠清楚，也要小心言語傷人。釐清事實之前，先不要急著下結論。",
+      "image": "cards/swords_01.webp",
+      "image_prompt": "A hand reaching out of a cloud gripping a sword pointing upward, with a golden crown on the tip, wrapped with an olive branch and a palm branch. Craggy mountain peaks below, clear cold light.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Triumph, the excessive degree in everything, conquest, triumph of force. It is a card of great force, in love as well as in hatred. The crown may carry a much higher significance than comes usually within the sphere of fortune-telling.",
+        "waite_reversed_en": "The same, but the results are disastrous; another account says--conception, childbirth, augmentation, multiplicity."
+      }
+    },
+    {
+      "id": "swords_02",
+      "name_zh": "寶劍二",
+      "name_en": "Two of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 2,
+      "element": "風",
+      "keywords_upright": [
+        "僵局",
+        "難以抉擇",
+        "迴避",
+        "保持平衡"
+      ],
+      "keywords_reversed": [
+        "做出決定",
+        "資訊浮現",
+        "優柔寡斷",
+        "壓力"
+      ],
+      "meaning_upright": "面臨兩難，選擇暫時閉上眼睛。這張牌提醒你，逃避不會讓問題消失，需要面對自己真正的感受。",
+      "meaning_reversed": "決定終於有了方向，或是在壓力下更加猶豫。值得想想：你還缺少哪一項資訊或勇氣？",
+      "image": "cards/swords_02.webp",
+      "image_prompt": "A blindfolded woman in white, seated on a stone bench by a moonlit sea, holding two swords crossed over her chest. Jagged rocks in the water, a thin crescent moon above. Stalemate and silence.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Conformity and the equipoise which it suggests, courage, friendship, concord in a state of arms; another reading gives tenderness, affection, intimacy. The suggestion of harmony and other favourable readings must be considered in a qualified manner, as Swords generally are not symbolical of beneficent forces in human affairs.",
+        "waite_reversed_en": "Imposture, falsehood, duplicity, disloyalty."
+      }
+    },
+    {
+      "id": "swords_03",
+      "name_zh": "寶劍三",
+      "name_en": "Three of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 3,
+      "element": "風",
+      "keywords_upright": [
+        "心碎",
+        "悲傷",
+        "痛苦的真相",
+        "分離"
+      ],
+      "keywords_reversed": [
+        "療傷",
+        "釋懷",
+        "壓抑痛苦",
+        "走出傷痛"
+      ],
+      "meaning_upright": "一種直接而尖銳的痛，可能與失望、分離或痛苦的真相有關。這張牌承認傷心是真實的，允許自己感受它。",
+      "meaning_reversed": "傷口正慢慢癒合，或是把痛苦壓在心裡不願面對。療癒沒有時間表，不必逼自己快點好。",
+      "image": "cards/swords_03.webp",
+      "image_prompt": "A large heart floating in a stormy sky, pierced by three swords, heavy rain falling around it. Dark gray clouds with soft gold edges. Grief, no people.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Removal, absence, delay, division, rupture, dispersion, and all that the design signifies naturally, being too simple and obvious to call for specific enumeration.",
+        "waite_reversed_en": "Mental alienation, error, loss, distraction, disorder, confusion."
+      }
+    },
+    {
+      "id": "swords_04",
+      "name_zh": "寶劍四",
+      "name_en": "Four of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 4,
+      "element": "風",
+      "keywords_upright": [
+        "休息",
+        "恢復",
+        "靜養",
+        "暫停"
+      ],
+      "keywords_reversed": [
+        "休息不足",
+        "重新出發",
+        "焦躁",
+        "無法放鬆"
+      ],
+      "meaning_upright": "事情告一段落，是需要休息與恢復的時刻。這張牌提醒你，暫停不是偷懶，而是為下一步積蓄力量。",
+      "meaning_reversed": "該休息卻停不下來，或是休息夠了準備重新出發。值得留意：你的身心現在需要什麼？",
+      "image": "cards/swords_04.webp",
+      "image_prompt": "A stone effigy of a knight lying on a tomb inside a quiet chapel, hands pressed together in prayer. Three swords hang on the wall behind and one sword lies under the tomb. Stained-glass window casting soft color. Rest and stillness.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Vigilance, retreat, solitude, hermit's repose, exile, tomb and coffin. It is these last that have suggested the design.",
+        "waite_reversed_en": "Wise administration, circumspection, economy, avarice, precaution, testament."
+      }
+    },
+    {
+      "id": "swords_05",
+      "name_zh": "寶劍五",
+      "name_en": "Five of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 5,
+      "element": "風",
+      "keywords_upright": [
+        "衝突",
+        "不擇手段",
+        "空洞的勝利",
+        "隔閡"
+      ],
+      "keywords_reversed": [
+        "和解",
+        "悔意",
+        "放下勝負",
+        "餘波"
+      ],
+      "meaning_upright": "爭執中有人看似得勝，卻讓彼此的關係付出了代價。這張牌提醒你，想想這場勝利是否值得。",
+      "meaning_reversed": "準備放下爭執，或是對自己的作為感到後悔。是時候考慮修補關係，而不是繼續較勁。",
+      "image": "cards/swords_05.webp",
+      "image_prompt": "A smirking man in the foreground collecting three swords, two other swords on the ground, while two figures walk away dejected along the shore behind him. Stormy, ragged clouds.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Degradation, destruction, revocation, infamy, dishonour, loss, with the variants and analogues of these.",
+        "waite_reversed_en": "The same; burial and obsequies."
+      }
+    },
+    {
+      "id": "swords_06",
+      "name_zh": "寶劍六",
+      "name_en": "Six of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 6,
+      "element": "風",
+      "keywords_upright": [
+        "過渡",
+        "遠離困境",
+        "療癒",
+        "平靜的旅程"
+      ],
+      "keywords_reversed": [
+        "無法離開",
+        "帶著包袱",
+        "阻礙",
+        "停滯"
+      ],
+      "meaning_upright": "正在從困難的階段緩緩離開，朝向較平靜的地方。這張牌提醒你，過渡期需要耐心，也要帶著學到的東西前進。",
+      "meaning_reversed": "想離開卻走不開，或是把舊的煩惱一起帶上船。值得想想：有哪些重擔其實可以留在岸邊？",
+      "image": "cards/swords_06.webp",
+      "image_prompt": "A ferryman poling a small boat across a river carrying a hooded woman and a child, six swords standing upright at the front of the boat. The water is rough on one side and calm on the other. Quiet passage toward a distant shore.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "journey by water, route, way, envoy, commissionary, expedient.",
+        "waite_reversed_en": "Declaration, confession, publicity; one account says that it is a proposal of love."
+      }
+    },
+    {
+      "id": "swords_07",
+      "name_zh": "寶劍七",
+      "name_en": "Seven of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 7,
+      "element": "風",
+      "keywords_upright": [
+        "策略",
+        "欺瞞",
+        "獨自行動",
+        "避重就輕"
+      ],
+      "keywords_reversed": [
+        "坦白",
+        "被揭穿",
+        "良心不安",
+        "重新面對"
+      ],
+      "meaning_upright": "以隱密、取巧的方式行事。這張牌提醒你留意誠實與策略之間的界線，也可能是在提醒你，有些事並不如表面看起來單純。",
+      "meaning_reversed": "真相浮現，或是想要坦白。值得想想：誠實面對，往往比繼續隱瞞更讓人安心。",
+      "image": "cards/swords_07.webp",
+      "image_prompt": "A figure with a wry look tiptoeing away from a military camp at dawn, carrying five swords in his arms, while two swords stay stuck in the ground behind him. Tents and a campfire in the distance.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Design, attempt, wish, hope, confidence; also quarrelling, a plan that may fail, annoyance. The design is uncertain in its import, because the significations are widely at variance with each other.",
+        "waite_reversed_en": "Good advice, counsel, instruction, slander, babbling."
+      }
+    },
+    {
+      "id": "swords_08",
+      "name_zh": "寶劍八",
+      "name_en": "Eight of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 8,
+      "element": "風",
+      "keywords_upright": [
+        "受困",
+        "自我設限",
+        "無力感",
+        "恐懼"
+      ],
+      "keywords_reversed": [
+        "掙脫",
+        "看見出路",
+        "取回力量",
+        "自我解放"
+      ],
+      "meaning_upright": "感覺被困住、無法行動，眼前像是被蒙住了眼睛；但這張牌也提示，限制有一部分來自自己的想法。",
+      "meaning_reversed": "開始看見出口，一點一點鬆開自己綁上的繩結。邁出第一步，往往比想像中容易。",
+      "image": "cards/swords_08.webp",
+      "image_prompt": "A woman blindfolded and loosely bound in a cloth, standing among eight swords planted around her in wet ground. A castle on a cliff in the background, gray sky. The bindings are loose.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Bad news, violent chagrin, crisis, censure, power in trammels, conflict, calumny; also sickness.",
+        "waite_reversed_en": "Disquiet, difficulty, opposition, accident, treachery; what is unforeseen; fatality."
+      }
+    },
+    {
+      "id": "swords_09",
+      "name_zh": "寶劍九",
+      "name_en": "Nine of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 9,
+      "element": "風",
+      "keywords_upright": [
+        "焦慮",
+        "擔憂",
+        "失眠",
+        "自責",
+        "夢魘"
+      ],
+      "keywords_reversed": [
+        "走出焦慮",
+        "尋求支持",
+        "恐懼放大",
+        "逐漸好轉"
+      ],
+      "meaning_upright": "夜裡反覆的擔憂與自責，往往比現實本身更沉重。這張牌提醒你，把煩惱說出來，找一個能陪你的人。",
+      "meaning_reversed": "焦慮開始鬆動，或是恐懼被放得更大。值得想想：你擔心的事，有多少是真的發生了？",
+      "image": "cards/swords_09.webp",
+      "image_prompt": "A person sitting up in bed at night with face in hands, nine swords hanging in a row on the dark wall behind. A quilt patterned with roses and zodiac symbols. Quiet anxiety.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Death, failure, miscarriage, delay, deception, disappointment, despair.",
+        "waite_reversed_en": "Imprisonment, suspicion, doubt, reasonable fear, shame."
+      }
+    },
+    {
+      "id": "swords_10",
+      "name_zh": "寶劍十",
+      "name_en": "Ten of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 10,
+      "element": "風",
+      "keywords_upright": [
+        "結束",
+        "谷底",
+        "痛苦的收場",
+        "解脫"
+      ],
+      "keywords_reversed": [
+        "慢慢復原",
+        "抗拒結束",
+        "重新站起",
+        "最壞已過"
+      ],
+      "meaning_upright": "某件事以痛苦的方式畫下句點，但也代表最糟的時刻已經過去。天亮之前總是最黑，這張牌提醒你，下一步是重新站起來。",
+      "meaning_reversed": "復原正在進行，或是不肯接受結束，讓痛苦拖得更久。值得想想：放手之後，可能得到什麼？",
+      "image": "cards/swords_10.webp",
+      "image_prompt": "A figure lying face down on dark ground with ten swords standing in the back, a black sky above and a faint golden sunrise on the horizon over calm water. Still and final, but hopeful at the edge.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Whatsoever is intimated by the design; also pain, affliction, tears, sadness, desolation. It is not especially a card of violent death.",
+        "waite_reversed_en": "Advantage, profit, success, favour, but none of these are permanent; also power and authority."
+      }
+    },
+    {
+      "id": "swords_11",
+      "name_zh": "寶劍侍者",
+      "name_en": "Page of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 11,
+      "element": "風",
+      "keywords_upright": [
+        "好奇",
+        "警覺",
+        "求知",
+        "新想法",
+        "直言"
+      ],
+      "keywords_reversed": [
+        "多嘴",
+        "衝動說話",
+        "缺乏謹慎",
+        "流言"
+      ],
+      "meaning_upright": "對事物充滿好奇，渴望觀察與學習。這張牌鼓勵你保持提問，但也提醒你說話前先想清楚。",
+      "meaning_reversed": "話說得太快或太尖銳，或是在沒有掌握完整資訊前就下判斷，甚至傳出流言。先聽完，再開口。",
+      "image": "cards/swords_11.webp",
+      "image_prompt": "A young page standing on a windy hilltop, holding an upright sword with both hands, hair and clothes blowing in the wind. Clouds rushing and birds flying high. Alert, curious.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Authority, overseeing, secret service, vigilance, spying, examination, and the qualities thereto belonging.",
+        "waite_reversed_en": "More evil side of these qualities; what is unforeseen, unprepared state; sickness is also intimated."
+      }
+    },
+    {
+      "id": "swords_12",
+      "name_zh": "寶劍騎士",
+      "name_en": "Knight of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 12,
+      "element": "風",
+      "keywords_upright": [
+        "果斷",
+        "行動",
+        "直率",
+        "衝刺",
+        "野心"
+      ],
+      "keywords_reversed": [
+        "魯莽",
+        "咄咄逼人",
+        "缺乏考慮",
+        "失控"
+      ],
+      "meaning_upright": "思路清楚又行動迅速，全速朝目標前進。這張牌提醒你，在速度之外，也要留意方向與他人的感受。",
+      "meaning_reversed": "衝得太急、說話太直，容易傷到別人或自己。值得放慢一點，先確認自己真正要去的地方。",
+      "image": "cards/swords_12.webp",
+      "image_prompt": "A knight in armor on a galloping white horse, charging forward with a raised sword. Windswept trees bend in the storm, clouds rush by, birds on the horse's cloth. Fast and fierce.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Skill, bravery, capacity, defence, address, enmity, wrath, war, destruction, opposition, resistance, ruin. There is therefore a sense in which the card signifies death, but it carries this meaning only in its proximity to other cards of fatality.",
+        "waite_reversed_en": "Imprudence, incapacity, extravagance."
+      }
+    },
+    {
+      "id": "swords_13",
+      "name_zh": "寶劍皇后",
+      "name_en": "Queen of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 13,
+      "element": "風",
+      "keywords_upright": [
+        "清醒",
+        "誠實",
+        "獨立",
+        "敏銳",
+        "界線"
+      ],
+      "keywords_reversed": [
+        "冷漠",
+        "尖刻",
+        "孤立",
+        "過度批判"
+      ],
+      "meaning_upright": "頭腦清楚、說話直接，不被情緒輕易左右。這張牌鼓勵你以誠實與公正的態度看待事情。",
+      "meaning_reversed": "清醒變成冷漠，或是用尖銳的言語保護自己。值得想想：你是否把心門關得太緊了？",
+      "image": "cards/swords_13.webp",
+      "image_prompt": "A dignified queen seated in profile on a stone throne carved with butterflies, in a dark blue cloak with silver embroidery, wearing a silver crown. She holds a tall upright sword in one hand and raises the other hand in a calm, stern gesture. Cool silver-blue sky with streaming clouds, a small bird flying in the distance. Composed, clear-minded, slightly melancholic mood, cool silver-blue accents against gold.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Widowhood, female sadness and embarrassment, absence, sterility, mourning, privation, separation.",
+        "waite_reversed_en": "Malice, bigotry, artifice, prudery, bale, deceit."
+      }
+    },
+    {
+      "id": "swords_14",
+      "name_zh": "寶劍國王",
+      "name_en": "King of Swords",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 14,
+      "element": "風",
+      "keywords_upright": [
+        "理性",
+        "公正",
+        "權威",
+        "清晰的溝通",
+        "專業"
+      ],
+      "keywords_reversed": [
+        "冷酷",
+        "濫用權威",
+        "專斷",
+        "缺乏同理"
+      ],
+      "meaning_upright": "以理性與公正做出判斷的人。這張牌提醒你，用清楚的邏輯與原則面對問題，並為決定負責。",
+      "meaning_reversed": "理性變成冷酷，或是用知識與權力壓人。值得想想：決定之中，是否漏掉了人的感受？",
+      "image": "cards/swords_14.webp",
+      "image_prompt": "A king seated on a stone throne carved with butterflies and crescent moons, wearing a blue robe and a crown, holding an upright sword. Tall clouds behind, cool silver-blue tones against gold. Clear, authoritative.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Whatsoever arises out of the idea of judgment and all its connexions-power, command, authority, militant intelligence, law, offices of the crown, and so forth.",
+        "waite_reversed_en": "Cruelty, perversity, barbarity, perfidy, evil intention."
+      }
+    },
+    {
+      "id": "pentacles_01",
+      "name_zh": "錢幣王牌",
+      "name_en": "Ace of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 1,
+      "element": "土",
+      "keywords_upright": [
+        "新機會",
+        "資源",
+        "穩固的開始",
+        "實質成果"
+      ],
+      "keywords_reversed": [
+        "錯失機會",
+        "規劃不周",
+        "資源不足",
+        "延遲"
+      ],
+      "meaning_upright": "一個與工作、財務或健康有關的新機會出現。這張牌提醒你，把想法落實成可靠的行動，穩穩地開始。",
+      "meaning_reversed": "機會可能被忽略，或是計畫缺乏實際基礎。值得檢視：準備得夠不夠，條件是否成熟？",
+      "image": "cards/pentacles_01.webp",
+      "image_prompt": "A hand reaching out of a cloud holding a large golden coin engraved with a five-pointed star. Below, a lush garden with a path through an arch of white lilies, leading to distant mountains. Quiet, fertile.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Perfect contentment, felicity, ecstasy; also speedy intelligence; gold.",
+        "waite_reversed_en": "The evil side of wealth, bad intelligence; also great riches. In any case it shews prosperity, comfortable material conditions, but whether these are of advantage to the possessor will depend on whether the card is reversed or not."
+      }
+    },
+    {
+      "id": "pentacles_02",
+      "name_zh": "錢幣二",
+      "name_en": "Two of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 2,
+      "element": "土",
+      "keywords_upright": [
+        "平衡",
+        "靈活",
+        "兼顧",
+        "適應變化"
+      ],
+      "keywords_reversed": [
+        "失衡",
+        "忙亂",
+        "顧此失彼",
+        "壓力"
+      ],
+      "meaning_upright": "同時處理好幾件事，在變動中維持平衡。這張牌提醒你保持彈性，並安排好優先順序。",
+      "meaning_reversed": "手上的事太多，開始顧此失彼，壓力也跟著累積。值得想想：哪些事可以暫時放下，哪些真的需要現在處理？",
+      "image": "cards/pentacles_02.webp",
+      "image_prompt": "A figure in a hat juggling two golden coins linked by an infinity-shaped ribbon, standing on a hill. Behind, two ships rising and falling on rolling sea waves. Lively balance.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "On the one hand it is represented as a card of gaiety, recreation and its connexions, which is the subject of the design; but it is read also as news and messages in writing, as obstacles, agitation, trouble, embroilment.",
+        "waite_reversed_en": "Enforced gaiety, simulated enjoyment, literal sense, handwriting, composition, letters of exchange."
+      }
+    },
+    {
+      "id": "pentacles_03",
+      "name_zh": "錢幣三",
+      "name_en": "Three of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 3,
+      "element": "土",
+      "keywords_upright": [
+        "合作",
+        "專業",
+        "技藝",
+        "學習",
+        "受到肯定"
+      ],
+      "keywords_reversed": [
+        "缺乏合作",
+        "品質不一",
+        "意見不合",
+        "不被重視"
+      ],
+      "meaning_upright": "與他人合作，各自貢獻專長，把一件事做好。這張牌肯定扎實的努力與團隊的力量。",
+      "meaning_reversed": "團隊裡溝通不順，或是努力沒有被看見。值得想想：是分工不清，還是需要主動表達？",
+      "image": "cards/pentacles_03.webp",
+      "image_prompt": "A craftsman standing on a bench carving inside a cathedral, while a monk and a nobleman hold architectural plans beside him. Three golden coins are carved into the stone arch above. Cooperation and craft.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Métier, trade, skilled labour; usually, however, regarded as a card of nobility, aristocracy, renown, glory.",
+        "waite_reversed_en": "Mediocrity, in work and otherwise, puerility, pettiness, weakness."
+      }
+    },
+    {
+      "id": "pentacles_04",
+      "name_zh": "錢幣四",
+      "name_en": "Four of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 4,
+      "element": "土",
+      "keywords_upright": [
+        "安全感",
+        "儲蓄",
+        "保守",
+        "掌控",
+        "守護"
+      ],
+      "keywords_reversed": [
+        "過度吝嗇",
+        "放鬆控制",
+        "失去",
+        "開放"
+      ],
+      "meaning_upright": "緊緊守住所擁有的，帶來穩定與安全。這張牌提醒你，適度的保守是智慧，但別讓它變成束縛。",
+      "meaning_reversed": "因為擔心失去而抓得太緊，或是開始學著放手。值得想想：安全感，真的來自抓住不放嗎？",
+      "image": "cards/pentacles_04.webp",
+      "image_prompt": "A crowned figure seated in front of a city, holding one golden coin tightly to the chest, one coin on the head and one coin under each foot. Protective, guarded.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "The surety of possessions, cleaving to that which one has, gift, legacy, inheritance.",
+        "waite_reversed_en": "Suspense, delay, opposition."
+      }
+    },
+    {
+      "id": "pentacles_05",
+      "name_zh": "錢幣五",
+      "name_en": "Five of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 5,
+      "element": "土",
+      "keywords_upright": [
+        "困頓",
+        "匱乏",
+        "孤立",
+        "需要幫助"
+      ],
+      "keywords_reversed": [
+        "走出困境",
+        "接受援助",
+        "好轉",
+        "重新連結"
+      ],
+      "meaning_upright": "在經濟或健康上遇到難關，感覺被孤立。這張牌提醒你，幫助其實就在不遠處，可以試著開口求助。",
+      "meaning_reversed": "最艱難的階段正在過去，或是仍不願向人求助。願意接受幫助，是重新站起來的第一步。",
+      "image": "cards/pentacles_05.webp",
+      "image_prompt": "Two ragged figures, one on crutches, walking through falling snow past a lit stained-glass church window, in which five golden coins form a pattern. Cold night, warm light unreachable.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "The card foretells material trouble above all, whether in the form illustrated--that is, destitution--or otherwise. For some cartomancists, it is a card of love and lovers-wife, husband, friend, mistress; also concordance, affinities. These alternatives cannot be harmonized.",
+        "waite_reversed_en": "Disorder, chaos, ruin, discord, profligacy."
+      }
+    },
+    {
+      "id": "pentacles_06",
+      "name_zh": "錢幣六",
+      "name_en": "Six of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 6,
+      "element": "土",
+      "keywords_upright": [
+        "慷慨",
+        "互助",
+        "公平",
+        "分享"
+      ],
+      "keywords_reversed": [
+        "不對等",
+        "附帶條件",
+        "負債",
+        "單方面的付出"
+      ],
+      "meaning_upright": "給予與接受之間的流動。這張牌提醒你，在能力範圍內分享，也能坦然地接受別人的幫助。",
+      "meaning_reversed": "付出與回報不對等，或是幫助帶著條件。值得想想：這份給予，是出於真心，還是為了得到什麼？",
+      "image": "cards/pentacles_06.webp",
+      "image_prompt": "A well-dressed merchant holding a balanced scale in one hand and giving coins with the other to two kneeling beggars. Six golden coins in the air around them. Dignified giving.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Presents, gifts, gratification another account says attention, vigilance now is the accepted time, present prosperity, etc.",
+        "waite_reversed_en": "Desire, cupidity, envy, jealousy, illusion."
+      }
+    },
+    {
+      "id": "pentacles_07",
+      "name_zh": "錢幣七",
+      "name_en": "Seven of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 7,
+      "element": "土",
+      "keywords_upright": [
+        "耐心",
+        "長期投入",
+        "檢視成果",
+        "等待收穫"
+      ],
+      "keywords_reversed": [
+        "急躁",
+        "白費力氣",
+        "缺乏成果",
+        "重新評估"
+      ],
+      "meaning_upright": "播下的種子需要時間成長。這張牌提醒你，停下來看看目前的進度，保持耐心，也確認方向沒有偏。",
+      "meaning_reversed": "對進度感到焦急，或覺得努力沒有回報。值得重新評估：是時間還沒到，還是方法需要調整？",
+      "image": "cards/pentacles_07.webp",
+      "image_prompt": "A gardener leaning on a hoe, looking at a leafy bush on which seven golden coins grow like fruit. Pause and evaluation, a quiet garden at dusk.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "These are exceedingly contradictory; in the main, it is a card of money, business, barter; but one reading gives altercation, quarrels--and another innocence, ingenuity, purgation.",
+        "waite_reversed_en": "Cause for anxiety regarding money which it may be proposed to lend."
+      }
+    },
+    {
+      "id": "pentacles_08",
+      "name_zh": "錢幣八",
+      "name_en": "Eight of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 8,
+      "element": "土",
+      "keywords_upright": [
+        "勤奮",
+        "專注",
+        "精進技能",
+        "紮實"
+      ],
+      "keywords_reversed": [
+        "敷衍",
+        "完美主義",
+        "缺乏熱情",
+        "重複而乏味"
+      ],
+      "meaning_upright": "專注投入一項技藝，一步步把基本功練紮實。這張牌肯定耐心與持續的努力，成果會在重複的練習中慢慢累積。",
+      "meaning_reversed": "做事敷衍，或是被完美主義困住、感到厭倦。值得想想：你還在乎這件事的初衷嗎？",
+      "image": "cards/pentacles_08.webp",
+      "image_prompt": "A craftsman sitting at a workbench, carefully engraving a star into a golden coin, six finished coins displayed on a post and the floor, and a small town in the distance. Focused, patient work.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Work, employment, commission, craftsmanship, skill in craft and business, perhaps in the preparatory stage.",
+        "waite_reversed_en": "Voided ambition, vanity, cupidity, exaction, usury. It may also signify the possession of skill, in the sense of the ingenious mind turned to cunning and intrigue."
+      }
+    },
+    {
+      "id": "pentacles_09",
+      "name_zh": "錢幣九",
+      "name_en": "Nine of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 9,
+      "element": "土",
+      "keywords_upright": [
+        "自給自足",
+        "獨立",
+        "享受成果",
+        "品味",
+        "安穩"
+      ],
+      "keywords_reversed": [
+        "過度依賴",
+        "外在的光鮮",
+        "財務壓力",
+        "孤單"
+      ],
+      "meaning_upright": "靠自己的努力建立起舒適的生活。這張牌鼓勵你享受來之不易的成果，也欣賞自己的獨立。",
+      "meaning_reversed": "看似光鮮卻缺乏安全感，或是對自己的成就沒有感覺。值得想想：舒適之外，你還需要什麼？",
+      "image": "cards/pentacles_09.webp",
+      "image_prompt": "A woman in a rich gold-embroidered gown standing in a vineyard, a falcon on her gloved hand, nine golden coins among the grapevines, a snail on the ground. Elegant, self-sufficient.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Prudence, safety, success, accomplishment, certitude, discernment.",
+        "waite_reversed_en": "Roguery, deception, voided project, bad faith."
+      }
+    },
+    {
+      "id": "pentacles_10",
+      "name_zh": "錢幣十",
+      "name_en": "Ten of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 10,
+      "element": "土",
+      "keywords_upright": [
+        "傳承",
+        "家庭",
+        "長久的穩定",
+        "豐盛",
+        "歸屬"
+      ],
+      "keywords_reversed": [
+        "家庭紛爭",
+        "財務不穩",
+        "傳承問題",
+        "短視"
+      ],
+      "meaning_upright": "跨越世代的穩定與豐盛，可能與家庭、傳承或長期的資產有關。這張牌提醒你，眼光放遠。",
+      "meaning_reversed": "家庭或財務上的不穩定，或對傳承有不同的期待。值得想想：什麼才是你想留下的東西？",
+      "image": "cards/pentacles_10.webp",
+      "image_prompt": "An old man seated under an archway with two dogs, a couple and a child in the middle, ten golden coins in a pattern in the air and on the arch, a castle behind. Legacy and family.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Gain, riches; family matters, archives, extraction, the abode of a family.",
+        "waite_reversed_en": "Chance, fatality, loss, robbery, games of hazard; sometimes gift, dowry, pension."
+      }
+    },
+    {
+      "id": "pentacles_11",
+      "name_zh": "錢幣侍者",
+      "name_en": "Page of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 11,
+      "element": "土",
+      "keywords_upright": [
+        "學習",
+        "務實",
+        "新計畫",
+        "專注",
+        "機會"
+      ],
+      "keywords_reversed": [
+        "缺乏專注",
+        "拖延",
+        "不切實際",
+        "錯失機會"
+      ],
+      "meaning_upright": "踏實又好學的新人，或是一個值得開始學習的新領域。這張牌鼓勵你，從小處開始、一步一步來。",
+      "meaning_reversed": "專注力不夠，或是計畫一直停在紙上、沒有真正開始。值得想想：是什麼讓你遲遲沒有動手？",
+      "image": "cards/pentacles_11.webp",
+      "image_prompt": "A young page standing in a green field holding up a golden coin and looking at it intently. Plowed fields and trees behind, soft morning light. Curious, attentive.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Application, study, scholarship, reflection another reading says news, messages and the bringer thereof; also rule, management.",
+        "waite_reversed_en": "Prodigality, dissipation, liberality, luxury; unfavourable news."
+      }
+    },
+    {
+      "id": "pentacles_12",
+      "name_zh": "錢幣騎士",
+      "name_en": "Knight of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 12,
+      "element": "土",
+      "keywords_upright": [
+        "可靠",
+        "勤勞",
+        "穩健",
+        "責任感",
+        "持續"
+      ],
+      "keywords_reversed": [
+        "停滯",
+        "過度謹慎",
+        "固執",
+        "缺乏進展"
+      ],
+      "meaning_upright": "不追求速度，但一步一腳印、值得信賴。這張牌提醒你，穩定與持續，常常比一時的衝刺更有力量。",
+      "meaning_reversed": "過度謹慎或固守舊方法而沒有進展。值得想想：是不是該為自己的步調加一點變化？",
+      "image": "cards/pentacles_12.webp",
+      "image_prompt": "A knight in armor sitting still on a stout dark horse in a plowed field, holding a golden coin in front of him. Steady, patient, reliable.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Utility, serviceableness, interest, responsibility, rectitude-all on the normal and external plane.",
+        "waite_reversed_en": "inertia, idleness, repose of that kind, stagnation; also placidity, discouragement, carelessness."
+      }
+    },
+    {
+      "id": "pentacles_13",
+      "name_zh": "錢幣皇后",
+      "name_en": "Queen of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 13,
+      "element": "土",
+      "keywords_upright": [
+        "務實",
+        "照顧",
+        "溫暖",
+        "豐盛",
+        "持家"
+      ],
+      "keywords_reversed": [
+        "過度操勞",
+        "忽視自己",
+        "物質依賴",
+        "失衡"
+      ],
+      "meaning_upright": "把溫暖與務實結合起來，營造一個舒適、可靠的環境。這張牌鼓勵你照顧身邊的人，也照顧自己。",
+      "meaning_reversed": "把所有事都攬在身上而忽略自己，或是過度重視物質。值得想想：你的付出，有沒有留一點給自己？",
+      "image": "cards/pentacles_13.webp",
+      "image_prompt": "A queen on a throne carved with fruit and flowers, in a garden of roses and vines, holding a golden coin in her lap, a small rabbit at her feet. Warm, nurturing.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Opulence, generosity, magnificence, security, liberty.",
+        "waite_reversed_en": "Evil, suspicion, suspense, fear, mistrust."
+      }
+    },
+    {
+      "id": "pentacles_14",
+      "name_zh": "錢幣國王",
+      "name_en": "King of Pentacles",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 14,
+      "element": "土",
+      "keywords_upright": [
+        "穩健",
+        "成功",
+        "豐盛",
+        "務實的領導",
+        "責任"
+      ],
+      "keywords_reversed": [
+        "貪婪",
+        "固執",
+        "過度重視物質",
+        "缺乏彈性"
+      ],
+      "meaning_upright": "以穩健與務實累積成果的領導者。這張牌提醒你，把資源用在長遠的地方，並以可靠的態度對待別人。",
+      "meaning_reversed": "過度追求財富與地位，或是固執地不願改變。值得想想：成功之外，你還想要什麼樣的生活？",
+      "image": "cards/pentacles_14.webp",
+      "image_prompt": "A king seated on a throne decorated with bulls and grapevines, wearing a robe embroidered with grapes, holding a scepter and a golden coin on his knee. A castle in the background. Prosperous, steady.",
+      "source": {
+        "work": "The Pictorial Key to the Tarot, A. E. Waite (1910/1911)",
+        "waite_upright_en": "Valour, realizing intelligence, business and normal intellectual aptitude, sometimes mathematical gifts and attainments of this kind; success in these paths.",
+        "waite_reversed_en": "Vice, weakness, ugliness, perversity, corruption, peril."
+      }
+    }
+  ]
+}

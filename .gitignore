@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+publish/
+artifacts/
+TestResults/
+# 卡片成品圖由生成工具產出後再決定是否納入版本控制（檔案大）；
+# 先忽略，確定要放進 repo 時再移除下一行。
+assets/cards/*.webp
+assets/cards/*.png

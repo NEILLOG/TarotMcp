@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>TarotMcp</AssemblyName>
+    <RootNamespace>TarotMcp.Server</RootNamespace>
+    <Description>塔羅牌 MCP server（stdio）：洗牌、抽牌、牌陣；解讀由模型負責。</Description>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModelContextProtocol" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TarotMcp.Core\TarotMcp.Core.csproj" />
+  </ItemGroup>
+
+</Project>

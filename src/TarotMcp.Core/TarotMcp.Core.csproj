@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>TarotMcp.Core</RootNamespace>
+    <AssemblyName>TarotMcp.Core</AssemblyName>
+    <Description>塔羅牌核心邏輯：資料載入與驗證、洗牌、抽牌、牌陣。不依賴 MCP。</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\cards.json" LogicalName="TarotMcp.Data.cards.json" />
+    <EmbeddedResource Include="Data\spreads.json" LogicalName="TarotMcp.Data.spreads.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="TarotMcp.Core.Tests" />
+  </ItemGroup>
+
+</Project>
