@@ -12,3 +12,4 @@ TestResults/
 assets/cards/*.png
 __pycache__/
 *.pyc
+.DS_Store
