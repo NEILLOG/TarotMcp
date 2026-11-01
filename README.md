@@ -22,7 +22,8 @@ src/TarotMcp.Core/      核心：資料載入與驗證、洗牌、抽牌（不�
 src/TarotMcp.Server/    MCP server（stdio），只是核心外面的一層薄殼
 tests/                  單元測試（xunit）
 plan/                   計畫與規格
-assets/cards/           牌面圖片（<id>.webp，由其他工具生成）
+assets/cards/           牌面插畫（<id>.webp，由其他工具生成）
+assets/frame/           共用的華麗邊框範本（frame.png＋frame.json，由其他工具生成）
 ```
 
 核心庫與 MCP 外殼分開，之後 Lumi 可以直接引用 `TarotMcp.Core` 做成內建工具。
@@ -76,4 +77,4 @@ dotnet publish src/TarotMcp.Server -c Release -r win-x64 --self-contained -p:Pub
 - 牌義（`src/TarotMcp.Core/Data/cards.json`）是依 A. E. Waite《The Pictorial Key to the Tarot》（1910/1911）與常見的現代解讀改寫的原創繁體中文；韋特英文原文保留在每張牌的 `source` 欄位。
 - 韋特原文的著作權狀態是依作者逝世年推斷，**正式發布前請自行確認**。
 - 授權條款尚未決定。
-- 牌面圖片由其他 AI 工具生成，各工具的商用條款不同，要販售前請先確認。
+- 牌面插畫與邊框範本由其他 AI 工具生成，各工具的商用條款不同，要販售前請先確認。

@@ -1,11 +1,46 @@
-# 塔羅牌圖片提示詞（78 張）
+# 塔羅牌圖片提示詞
 
-使用方式：每張牌的完整提示詞 = 風格前綴 + 場景描述。比例 7:12 直式，建議 1400×2400 px（至少 840×1440）。檔名依 `image` 欄位，例如 `cards/major_00.webp`。
+整副牌的圖分成兩種素材，**分開生成、由程式合成**：
 
-## 風格前綴（每張都要貼在最前面）
+1. **邊框範本**：全副牌共用的一張華麗邊框（本檔「一、邊框範本」）。
+2. **78 張插畫**：每張牌只有插畫，沒有邊框、文字、數字（「二、插畫」）。
+
+牌名、羅馬數字、逆位標示都由程式疊上去，不交給 AI 畫（AI 寫中文常常亂碼，也無法保證 78 張字體一致）。逆位只旋轉插畫層，邊框與文字保持正向。規格見 `00-master-plan.md` 的「牌面圖片」。
+
+## 一、邊框範本（只生成一張）
+
+整張牌 7:12 直式，建議 1400×2400 px（至少 840×1440；AI 做不到 7:12 時用最高直式比例生成再裁切）。窗口塗純洋紅 `#FF00FF` 方便去背；圓章與牌名板內部塗純黑，之後由程式寫字。
 
 ```text
-A vertical tarot card illustration, painterly semi-realistic fantasy art with soft watercolor and ink textures, delicate fine linework, gold leaf highlights and sparkles. Dark midnight-blue and near-black background with warm gold and cream-white as the main colors, mystical and elegant mood, cinematic soft lighting, richly detailed. Portrait composition with a clear central subject. Illustration only: NO card border, NO frame, NO text, NO letters, NO numerals, NO captions, NO watermark. Background fills the whole canvas edge to edge; keep the main subject in the central area with about 10% empty margin on the left and right.
+A vertical ornate tarot card FRAME TEMPLATE, aspect ratio 7:12, full-bleed, flat 2D front view, no perspective, no shadow outside the card.
+
+Style: dark mystical celestial tarot frame, deep midnight-navy and black background, delicate hand-drawn antique gold line work, double thin gold border lines with a small gap between them, rounded outer corners, intricate Art Nouveau / celestial filigree at all four corners (curling vines, tiny stars, crescent moons, small sparkles), fine gold dust speckles, subtle aged-gold metallic texture. Elegant, refined, thin lines, not thick or chunky. Perfectly symmetrical left-to-right.
+
+Layout (percent of card height, measured from the top):
+- Top center: an empty circular medallion about 11% of the card width in diameter, ringed in double gold lines, slightly overlapping the top border, with small crescent moons on its left and right. The inside of the medallion is SOLID BLACK and completely empty.
+- Middle (about 5% to 83% of the height): a large rounded-rectangle window for the artwork, about 90% of the card width, thin gold inner border. The ENTIRE inside of this window is filled with a perfectly flat, solid pure magenta #FF00FF, with no gradient, no texture, no ornaments inside.
+- Bottom (about 85% to 98%): a wide rounded name plate spanning the card width inside the border, edged with fine gold lines, small gold diamond and flourish ornaments at its left, right and bottom center, and a thin gold divider line in the middle. The inside of the plate is SOLID BLACK and completely empty.
+
+Absolutely no text, letters, numbers, Roman numerals, symbols, watermark, characters, faces, or illustration anywhere. Only the frame, ornaments, the empty black medallion, the empty magenta window and the empty black name plate.
+
+Output: highest resolution available, ideally 2800x4800 px.
+```
+
+生成後的處理：
+
+- 先生成 3～4 張，挑一張最滿意的當範本，之後 78 張共用。
+- 洋紅窗口若有漸層或雜點，請 AI 重畫，否則去背會留下邊緣。
+- 量出洋紅窗口的外框（寬高與位置），記到 `assets/frame/frame.json`（`window: {x, y, width, height}`，單位為像素，以範本的實際尺寸為準）。**插畫的裁切比例以實測窗口為準**，預期約 2:3（窗口約 0.90W × 0.78H）。
+- 存成 `assets/frame/frame.png`（洋紅已去背成透明的版本）。
+
+## 二、插畫（78 張）
+
+每張牌的完整提示詞 = 風格前綴 + 場景描述。比例約 2:3 直式（以邊框窗口實測為準），建議寬 1260 px 以上（例：1260×1872）。檔名依 `image` 欄位，例如 `cards/major_00.webp`。
+
+### 風格前綴（每張都要貼在最前面）
+
+```text
+Semi-realistic anime-style watercolor illustration, dark midnight-navy starry atmosphere with warm glowing gold accents and cream-white highlights, delicate fine linework, soft painterly texture with gold dust sparkles, gentle emotional expressions, cinematic soft lighting, richly detailed, mystical and elegant mood. Vertical portrait composition with a clear central subject, background filled edge to edge, keep the main subject within the central area with about 8% empty margin on the left and right. Illustration only: NO card border, NO frame, NO text, NO letters, NO numerals, NO captions, NO watermark.
 ```
 
 ## 各牌場景描述
