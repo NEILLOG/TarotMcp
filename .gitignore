@@ -13,3 +13,6 @@ assets/cards/*.png
 __pycache__/
 *.pyc
 .DS_Store
+
+# 自用說明書（只放本機）
+MANUAL.md
