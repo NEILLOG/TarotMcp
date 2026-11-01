@@ -39,13 +39,11 @@ dotnet test
 
 ## 在 MCP 客戶端使用
 
-先發佈成單一執行檔：
+到 GitHub 的 Releases 頁面下載對應平台的 zip（`TarotMcp-<版本>-win-x64.zip` 或 `TarotMcp-<版本>-osx-arm64.zip`），解開後只有一個執行檔：`TarotMcp.exe`（Windows）或 `TarotMcp`（macOS）。檔名固定，更新版本時覆蓋同一個路徑，客戶端設定不用改。
 
-```bash
-dotnet publish src/TarotMcp.Server -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
-```
+macOS 從瀏覽器下載的檔案會被加上隔離屬性，第一次要先解除：`xattr -d com.apple.quarantine TarotMcp`。
 
-再把路徑加進客戶端設定（以 Claude Desktop 格式為例）：
+也可以自己發佈（見下方「發版」）。把執行檔的路徑加進客戶端設定（以 Claude Desktop 格式為例）：
 
 ```json
 {
@@ -56,6 +54,19 @@ dotnet publish src/TarotMcp.Server -c Release -r win-x64 --self-contained -p:Pub
 ```
 
 直接雙擊執行檔不會卡住：它會顯示說明與含實際路徑的設定範例，然後等按鍵關閉。
+
+## 發版
+
+```bash
+scripts/release.sh 1.0.0        # 在乾淨且已同步的 main 上打 tag v1.0.0 並推送
+scripts/release.sh 1.1.0-rc1    # 版本號含 "-" 是預覽版：Release 標成 prerelease
+```
+
+推送 `v*` tag 後，`.github/workflows/release.yml` 會自動：跑測試 → 用 tag 的版本號發佈 Windows x64 與 macOS Apple Silicon（單一檔案、自包含）→ 建立 GitHub Release，附上兩個 zip。也可以在 Actions 頁面手動執行，輸入版本號。
+
+- 發佈說明：有 `docs/release-notes/v<版本>.md` 就用它，沒有就用自動產生的變更清單。
+- 本機試打包（不推送、不建立 Release）：`scripts/publish-release.sh --version 0.0.0-local`，產物在 `artifacts/release/`（已被 `.gitignore` 忽略）。
+- 版本號會寫進程式（MCP 握手回報的 `serverInfo.version`）；沒有指定版本時，腳本用最近的 tag，再沒有就用 `TarotMcp.Server.csproj` 的 `<Version>`。
 
 ## 牌面圖片
 

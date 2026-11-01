@@ -1,0 +1,97 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '版本號，例如 1.0.0'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: 執行測試
+        run: dotnet test TarotMcp.sln -c Release --nologo
+
+  # 一台 macOS 同時產出 Windows x64 與 macOS Apple Silicon（macOS 版需要在 macOS 上做 ad-hoc 簽章）
+  build:
+    needs: test
+    runs-on: macos-latest
+    steps:
+      - name: 取得版本號
+        shell: bash
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            v="${GITHUB_REF_NAME#v}"
+          else
+            v="$INPUT_VERSION"
+          fi
+          echo "VERSION=$v" >> "$GITHUB_ENV"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - name: 發佈
+        run: ./scripts/publish-release.sh --version "$VERSION"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release
+          path: artifacts/release/*
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4   # 讀 docs/release-notes/v{版本}.md
+      - name: 取得版本號
+        shell: bash
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            v="${GITHUB_REF_NAME#v}"
+          else
+            v="$INPUT_VERSION"
+          fi
+          echo "VERSION=$v" >> "$GITHUB_ENV"
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+          path: release
+      - name: 建立或更新 GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          tag="v$VERSION"
+          # 有 docs/release-notes/v{版本}.md 就用它當發佈說明，沒有才用自動產生的清單
+          notes=(--generate-notes)
+          if [ -f "docs/release-notes/$tag.md" ]; then
+            notes=(--notes-file "docs/release-notes/$tag.md")
+          fi
+          # 版本號含 "-"（例如 0.0.1-test、1.1.0-rc1）是預覽版：不會成為 latest
+          flags=("${notes[@]}")
+          if [[ "$VERSION" == *-* ]]; then
+            flags+=(--prerelease)
+          fi
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" release/* --clobber
+          elif [ "$EVENT_NAME" = "push" ]; then
+            gh release create "$tag" release/* --title "TarotMcp $VERSION" "${flags[@]}" --verify-tag
+          else
+            gh release create "$tag" release/* --title "TarotMcp $VERSION" "${flags[@]}"
+          fi
