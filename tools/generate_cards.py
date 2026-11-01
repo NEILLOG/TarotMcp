@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""依 plan/image-prompts.md 批次產生 78 張塔羅牌「插畫」（不含邊框；邊框是另一張共用範本）。
+"""依 plan/image-prompts.md 批次產生 78 張塔羅牌「插畫」（滿版 7:12，不含邊框；邊框是另一張同尺寸的共用範本，疊在插畫上）。
 
-流程：解析提示詞 -> 呼叫 images/generations -> 裁成邊框窗口的比例 -> 存成 webp。
+流程：解析提示詞 -> 呼叫 images/generations -> 裁成 7:12 -> 存成 webp。
 特色：已存在的檔案自動略過（可續跑）、429/5xx 自動重試、
 可用環境變數限制張數與併發。
 
@@ -10,14 +10,13 @@
   IMAGE_API_URL      預設 https://api.openai.com/v1/images/generations
   IMAGE_MODEL        預設 gpt-image-2.5-flare
   IMAGE_SIZES        逗號分隔的候選尺寸，依序嘗試，遇到「尺寸不支援」就換下一個
-                     預設 1024x1536,1008x1728,1024x1792
+                     預設 1008x1728,1024x1792,1024x1536
   IMAGE_QUALITY      選填，原樣傳給 API（例如 low / medium / high）
   CARD_ONLY          選填，只跑指定的卡（逗號分隔，例如 major_02,cups_01）
   CARD_SKIP          選填，額外略過的卡（逗號分隔）
   CARD_LIMIT         選填，最多本次實際呼叫 API 的張數
   CARD_CONCURRENCY   預設 3
-  OUT_W / OUT_H      輸出尺寸。沒設定時：若有 assets/frame/frame.json 就用其中窗口的寬高，
-                     否則 1260x1872（約 2:3，邊框窗口的預期比例）
+  OUT_W / OUT_H      輸出尺寸，預設 1400x2400（7:12，與邊框範本相同）
 """
 from __future__ import annotations
 
@@ -70,15 +69,6 @@ def parse_prompts(md: str) -> tuple[str, list[tuple[str, str]]]:
     return prefix, cards
 
 
-def default_out_size() -> tuple[int, int]:
-    """插畫輸出尺寸：以邊框範本實測的窗口為準；還沒有範本時用預期的 2:3。"""
-    frame_json = ROOT / "assets" / "frame" / "frame.json"
-    if frame_json.exists():
-        win = json.loads(frame_json.read_text(encoding="utf-8"))["window"]
-        return int(win["width"]), int(win["height"])
-    return 1260, 1872
-
-
 def csv_env(name: str) -> set[str]:
     return {x.strip() for x in os.environ.get(name, "").split(",") if x.strip()}
 
@@ -93,14 +83,12 @@ class Generator:
         self.sizes = [
             s.strip()
             for s in os.environ.get(
-                "IMAGE_SIZES", "1024x1536,1008x1728,1024x1792"
+                "IMAGE_SIZES", "1008x1728,1024x1792,1024x1536"
             ).split(",")
             if s.strip()
         ]
         self.quality = os.environ.get("IMAGE_QUALITY", "").strip()
-        w, h = os.environ.get("OUT_W"), os.environ.get("OUT_H")
-        if not (w and h):
-            w, h = default_out_size()
+        w, h = os.environ.get("OUT_W", "1400"), os.environ.get("OUT_H", "2400")
         self.out_w, self.out_h = int(w), int(h)
         self.size_lock = threading.Lock()
         self.size_idx = 0  # 找到可用尺寸後所有執行緒共用
@@ -156,7 +144,7 @@ class Generator:
         raise RuntimeError(f"重試次數用盡: {last_err}")
 
     def to_card(self, raw: bytes) -> Image.Image:
-        """置中裁切成輸出比例（邊框窗口）再縮放到輸出尺寸。"""
+        """置中裁切成 7:12 再縮放到輸出尺寸。"""
         im = Image.open(io.BytesIO(raw)).convert("RGB")
         target = self.out_w / self.out_h
         w, h = im.size

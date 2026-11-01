@@ -1,11 +1,12 @@
 # 塔羅牌圖片提示詞
 
-整副牌的圖分成兩種素材，**分開生成、由程式合成**：
+整副牌的圖分成兩種素材，**尺寸都是 7:12、滿版，像圖層一樣由下往上疊**：
 
-1. **邊框範本**：全副牌共用的一張華麗邊框（本檔「一、邊框範本」）。
-2. **78 張插畫**：每張牌只有插畫，沒有邊框、文字、數字（「二、插畫」）。
+1. **78 張插畫**（最下層）：每張牌一張滿版插畫，沒有邊框、文字、數字（「二、插畫」）。
+2. **邊框範本**（上一層）：全副牌共用的一張華麗邊框，窗口去背透明（本檔「一、邊框範本」）。
+3. **文字**（最上層，由程式畫）：羅馬數字、中英文牌名、逆位標示。不交給 AI 畫（AI 寫中文常亂碼，也無法保證 78 張字體一致）。
 
-牌名、羅馬數字、逆位標示都由程式疊上去，不交給 AI 畫（AI 寫中文常常亂碼，也無法保證 78 張字體一致）。逆位只旋轉插畫層，邊框與文字保持正向。規格見 `00-master-plan.md` 的「牌面圖片」。
+逆位只旋轉插畫層（以窗口中心為旋轉中心），邊框與文字保持正向。規格見 `00-master-plan.md` 的「牌面圖片」。
 
 ## 一、邊框範本（只生成一張）
 
@@ -30,17 +31,19 @@ Output: highest resolution available, ideally 2800x4800 px.
 
 - 先生成 3～4 張，挑一張最滿意的當範本，之後 78 張共用。
 - 洋紅窗口若有漸層或雜點，請 AI 重畫，否則去背會留下邊緣。
-- 量出洋紅窗口的外框（寬高與位置），記到 `assets/frame/frame.json`（`window: {x, y, width, height}`，單位為像素，以範本的實際尺寸為準）。**插畫的裁切比例以實測窗口為準**，預期約 2:3（窗口約 0.90W × 0.78H）。
-- 存成 `assets/frame/frame.png`（洋紅已去背成透明的版本）。
+- 量出洋紅窗口的外框（寬高與位置），記到 `assets/frame/frame.json`（`window: {x, y, width, height}`，單位為像素，以範本的實際尺寸為準）。程式用它決定逆位時的旋轉中心（窗口中心）。
+- 存成 `assets/frame/frame.png`（洋紅已去背成透明的版本）。範本與插畫同為 7:12，疊圖時座標完全對齊。
 
 ## 二、插畫（78 張）
 
-每張牌的完整提示詞 = 風格前綴 + 場景描述。比例約 2:3 直式（以邊框窗口實測為準），建議寬 1260 px 以上（例：1260×1872）。檔名依 `image` 欄位，例如 `cards/major_00.webp`。
+每張牌的完整提示詞 = 風格前綴 + 場景描述。比例 7:12 直式、**滿版**（背景鋪滿整張），建議 1400×2400 px（至少 840×1440）。檔名依 `image` 欄位，例如 `cards/major_00.webp`。
+
+插畫會被邊框蓋住一部分（頂部圓章、下方牌名板、四周邊框與四角裝飾），所以**主體要避開這些位置**：主體留在左右各 10% 以內、上方 9% 到下方 80% 之間，視覺中心約在由上往下 44% 的位置；上方 8% 與下方 18% 只放背景的延伸（天空、地面、水面等），不放重要細節。這些寫在風格前綴裡。
 
 ### 風格前綴（每張都要貼在最前面）
 
 ```text
-Semi-realistic anime-style watercolor illustration, dark midnight-navy starry atmosphere with warm glowing gold accents and cream-white highlights, delicate fine linework, soft painterly texture with gold dust sparkles, gentle emotional expressions, cinematic soft lighting, richly detailed, mystical and elegant mood. Vertical portrait composition with a clear central subject, background filled edge to edge, keep the main subject within the central area with about 8% empty margin on the left and right. Illustration only: NO card border, NO frame, NO text, NO letters, NO numerals, NO captions, NO watermark.
+Semi-realistic anime-style watercolor illustration, dark midnight-navy starry atmosphere with warm glowing gold accents and cream-white highlights, delicate fine linework, soft painterly texture with gold dust sparkles, gentle emotional expressions, cinematic soft lighting, richly detailed, mystical and elegant mood. Vertical 7:12 portrait, full-bleed: the background fills the entire canvas edge to edge. Place the main subject so its visual center sits about 44% down from the top, entirely inside the central area (at least 10% clear of the left and right edges, below the top 9% and above the bottom 20% of the canvas). Keep the top 8% and the bottom 18% as plain atmospheric background (sky, ground, water, mist) with no important details, because a decorative frame will cover those areas. Illustration only: NO card border, NO frame, NO text, NO letters, NO numerals, NO captions, NO watermark.
 ```
 
 ## 各牌場景描述
