@@ -1,0 +1,83 @@
+name: Generate tarot card images
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "只跑這些卡（逗號分隔，例如 major_02,cups_01；留空＝全部）"
+        required: false
+        default: ""
+      skip:
+        description: "額外略過的卡（逗號分隔）。已試跑的前兩張預設略過"
+        required: false
+        default: "major_00,major_01"
+      limit:
+        description: "本次最多呼叫 API 幾次（0＝不限制；想先試少量就填 3）"
+        required: false
+        default: "0"
+      concurrency:
+        description: "同時送出的請求數"
+        required: false
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-cards
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests pillow
+
+      - name: Generate images
+        id: gen
+        env:
+          IMAGE_API_KEY: ${{ secrets.IMAGE_API_KEY }}
+          IMAGE_API_URL: https://api.openai.com/v1/images/generations
+          IMAGE_MODEL: gpt-image-2.5-flare
+          CARD_ONLY: ${{ inputs.only }}
+          CARD_SKIP: ${{ inputs.skip }}
+          CARD_LIMIT: ${{ inputs.limit }}
+          CARD_CONCURRENCY: ${{ inputs.concurrency }}
+        run: |
+          if [ -z "$IMAGE_API_KEY" ]; then
+            echo "::error::找不到 repo secret IMAGE_API_KEY"; exit 2
+          fi
+          set +e
+          python tools/generate_cards.py
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Contact sheet
+        run: python tools/make_contact_sheet.py || true
+
+      # 不管有沒有失敗都先把已完成的存回 repo，下次會自動續跑
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets
+          if git diff --cached --quiet; then
+            echo "沒有新檔案"; exit 0
+          fi
+          n=$(git diff --cached --name-only -- 'assets/cards/*.webp' | wc -l)
+          git commit -m "assets: 產生塔羅牌圖片 ${n} 張"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Fail if some cards failed
+        if: steps.gen.outputs.code != '0'
+        run: |
+          echo "::error::有卡片生成失敗（見上方 Generate images 的 [fail] 行），已完成的已提交，重新執行 workflow 即可續跑"
+          exit 1
