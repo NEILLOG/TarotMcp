@@ -19,6 +19,18 @@ on:
         description: "同時送出的請求數"
         required: false
         default: "3"
+      cards:
+        description: "要不要跑 78 張插畫（只想跑邊框時取消勾選）"
+        type: boolean
+        default: true
+      frame_count:
+        description: "邊框範本：產生幾張候選（0＝不產生；已存在的候選會略過）"
+        required: false
+        default: "0"
+      frame_pick:
+        description: "邊框範本：把第幾張候選轉正成 assets/frame/frame.png（例如 2；留空＝不動）"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -42,6 +54,7 @@ jobs:
 
       - name: Generate images
         id: gen
+        if: inputs.cards
         env:
           IMAGE_API_KEY: ${{ secrets.IMAGE_API_KEY }}
           IMAGE_API_URL: https://api.openai.com/v1/images/generations
@@ -59,6 +72,25 @@ jobs:
           echo "code=$?" >> "$GITHUB_OUTPUT"
           exit 0
 
+      # 邊框範本（獨立一步；要還原就刪掉這一段、tools/generate_frame.py 與上面兩個 frame_* 輸入）
+      - name: Generate frame template
+        id: frame
+        if: inputs.frame_count != '0' || inputs.frame_pick != ''
+        env:
+          IMAGE_API_KEY: ${{ secrets.IMAGE_API_KEY }}
+          IMAGE_API_URL: https://api.openai.com/v1/images/generations
+          IMAGE_MODEL: gpt-image-2.5-flare
+          FRAME_COUNT: ${{ inputs.frame_count }}
+          FRAME_PICK: ${{ inputs.frame_pick }}
+        run: |
+          if [ "$FRAME_COUNT" != "0" ] && [ -z "$IMAGE_API_KEY" ]; then
+            echo "::error::找不到 repo secret IMAGE_API_KEY"; exit 2
+          fi
+          set +e
+          python tools/generate_frame.py
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          exit 0
+
       - name: Contact sheet
         run: python tools/make_contact_sheet.py || true
 
@@ -72,12 +104,19 @@ jobs:
             echo "沒有新檔案"; exit 0
           fi
           n=$(git diff --cached --name-only -- 'assets/cards/*.webp' | wc -l)
-          git commit -m "assets: 產生塔羅牌圖片 ${n} 張"
+          f=$(git diff --cached --name-only -- 'assets/frame/*.png' | wc -l)
+          git commit -m "assets: 產生塔羅牌圖片 ${n} 張、邊框圖 ${f} 張"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Fail if some cards failed
-        if: steps.gen.outputs.code != '0'
+        if: steps.gen.outputs.code && steps.gen.outputs.code != '0'
         run: |
           echo "::error::有卡片生成失敗（見上方 Generate images 的 [fail] 行），已完成的已提交，重新執行 workflow 即可續跑"
+          exit 1
+
+      - name: Fail if frame failed
+        if: steps.frame.outputs.code && steps.frame.outputs.code != '0'
+        run: |
+          echo "::error::邊框範本失敗（見上方 Generate frame template 的 [fail] 行），已完成的已提交，重新執行 workflow 即可續跑"
           exit 1
