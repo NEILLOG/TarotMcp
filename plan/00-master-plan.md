@@ -73,7 +73,7 @@
 
 每個牌陣有 `positions`，每個位置有 `index`、`id`、`name_zh`、`meaning_zh`、`layout{x, y, rotation, z}`。
 
-- `layout` 單位是牌寬，(0,0) 為牌陣中心，x 向右、y 向下為正；`rotation` 是度數；`z` 是疊放層級。
+- `layout.x` 以牌寬為單位、`layout.y` 以牌高為單位（牌高 = 牌寬 × 12/7）；(0,0) 為牌陣中心，x 向右、y 向下為正；`rotation` 是度數；`z` 是疊放層級。
 - 單張與三張是原創定義；凱爾特十字依韋特原書第三部第 7 節（PDF 第 118–120 頁）。
 
 | 位置 | id | 名稱 | x | y | 備註 |

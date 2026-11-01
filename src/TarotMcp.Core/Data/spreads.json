@@ -1,5 +1,5 @@
 {
-  "note": "layout.x/y: card-width units, (0,0)=spread centre, y grows downward; rotation in degrees; z = stacking order. celtic_cross follows A. E. Waite, The Pictorial Key to the Tarot (1911), part 3 section 7. single_card and three_card_timeline are original definitions. The Significator is intentionally not used.",
+  "note": "layout.x: card-width units, layout.y: card-height units (height = width × 12/7), (0,0)=spread centre, y grows downward; rotation in degrees; z = stacking order. celtic_cross follows A. E. Waite, The Pictorial Key to the Tarot (1911), part 3 section 7. single_card and three_card_timeline are original definitions. The Significator is intentionally not used.",
   "spreads": [
     {
       "id": "single_card",

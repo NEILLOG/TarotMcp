@@ -21,7 +21,7 @@ public sealed record Card(
     CardSource Source,
     string? ReviewNote);
 
-/// <summary>牌陣位置在畫面上的擺放。單位是牌寬，(0,0) 為牌陣中心，y 向下為正。</summary>
+/// <summary>牌陣位置在畫面上的擺放。x 以牌寬、y 以牌高為單位（牌高 = 牌寬 × 12/7），(0,0) 為牌陣中心，y 向下為正。</summary>
 public sealed record SpreadLayout(double X, double Y, double Rotation, int Z);
 
 public sealed record SpreadPosition(
