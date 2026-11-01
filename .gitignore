@@ -10,3 +10,5 @@ TestResults/
 # 卡片成品圖（webp）由 tools/generate_cards.py / GitHub Actions 產出並納入版本控制。
 # 若有殘留的 PNG 原始輸出則忽略。
 assets/cards/*.png
+__pycache__/
+*.pyc

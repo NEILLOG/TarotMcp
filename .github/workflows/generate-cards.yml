@@ -8,9 +8,9 @@ on:
         required: false
         default: ""
       skip:
-        description: "額外略過的卡（逗號分隔）。已試跑的前兩張預設略過"
+        description: "額外略過的卡（逗號分隔）"
         required: false
-        default: "major_00,major_01"
+        default: ""
       limit:
         description: "本次最多呼叫 API 幾次（0＝不限制；想先試少量就填 3）"
         required: false
