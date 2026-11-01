@@ -38,6 +38,7 @@ IRandomSource random = int.TryParse(Environment.GetEnvironmentVariable("TAROT_TE
 builder.Services.AddSingleton(deck);
 builder.Services.AddSingleton(random);
 builder.Services.AddSingleton<DrawService>();
+builder.Services.AddSingleton<AssetCache>();
 
 builder.Services
     .AddMcpServer(options => options.ServerInstructions = Instructions.Text)

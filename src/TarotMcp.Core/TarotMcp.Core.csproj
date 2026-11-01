@@ -11,6 +11,13 @@
     <EmbeddedResource Include="Data\spreads.json" LogicalName="TarotMcp.Data.spreads.json" />
   </ItemGroup>
 
+  <!-- 牌面素材一起打包進組件（單一檔案發佈時就在 exe 裡）：78 張插畫與共用的邊框範本。 -->
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\assets\cards\*.webp" LogicalName="TarotMcp.Assets.cards.%(Filename)%(Extension)" />
+    <EmbeddedResource Include="..\..\assets\frame\frame.png" LogicalName="TarotMcp.Assets.frame.frame.png" Condition="Exists('..\..\assets\frame\frame.png')" />
+    <EmbeddedResource Include="..\..\assets\frame\frame.json" LogicalName="TarotMcp.Assets.frame.frame.json" Condition="Exists('..\..\assets\frame\frame.json')" />
+  </ItemGroup>
+
   <ItemGroup>
     <InternalsVisibleTo Include="TarotMcp.Core.Tests" />
   </ItemGroup>

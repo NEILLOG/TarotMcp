@@ -57,7 +57,8 @@ public static class ViewMapper
         s.UseFor,
         s.Positions.OrderBy(p => p.Index).Select(p => new PositionView(p.Index, p.Id, p.NameZh, p.MeaningZh, p.Layout)).ToList());
 
-    public static DrawResultView ToView(this DrawResult r) => new(
+    /// <param name="imageLocator">把牌 id 換成客戶端讀得到的圖片位置（例如本機檔案路徑）；回傳 null 或不給就維持資料裡的相對路徑。</param>
+    public static DrawResultView ToView(this DrawResult r, Func<string, string?>? imageLocator = null) => new(
         r.Spread.Id,
         r.Spread.NameZh,
         r.AllowReversed,
@@ -76,9 +77,9 @@ public static class ViewMapper
                 d.Card.Element,
                 d.Keywords,
                 d.Meaning,
-                d.Card.Image))).ToList());
+                imageLocator?.Invoke(d.Card.Id) ?? d.Card.Image))).ToList());
 
-    public static CardDetailView ToDetailView(this Card c) => new(
+    public static CardDetailView ToDetailView(this Card c, Func<string, string?>? imageLocator = null) => new(
         c.Id,
         c.NameZh,
         c.NameEn,
@@ -90,5 +91,5 @@ public static class ViewMapper
         c.KeywordsReversed,
         c.MeaningUpright,
         c.MeaningReversed,
-        c.Image);
+        imageLocator?.Invoke(c.Id) ?? c.Image);
 }

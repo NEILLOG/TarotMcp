@@ -14,11 +14,13 @@ public sealed class TarotTools
 {
     private readonly DeckData _deck;
     private readonly DrawService _draw;
+    private readonly AssetCache _assets;
 
-    public TarotTools(DeckData deck, DrawService draw)
+    public TarotTools(DeckData deck, DrawService draw, AssetCache assets)
     {
         _deck = deck;
         _draw = draw;
+        _assets = assets;
     }
 
     [McpServerTool(Name = "list_spreads", ReadOnly = true)]
@@ -45,7 +47,7 @@ public sealed class TarotTools
     {
         try
         {
-            return TarotJson.Serialize(_draw.Draw(spreadId, allowReversed).ToView());
+            return TarotJson.Serialize(_draw.Draw(spreadId, allowReversed).ToView(_assets.GetCardImagePath));
         }
         catch (UnknownSpreadException ex)
         {
@@ -58,6 +60,6 @@ public sealed class TarotTools
     public string GetCard([Description("牌的 id，例如 major_00（愚者）、wands_01（權杖王牌）、swords_13（寶劍皇后）")] string cardId)
     {
         var card = _deck.FindCard(cardId) ?? throw new McpException(new UnknownCardException(cardId).Message);
-        return TarotJson.Serialize(card.ToDetailView());
+        return TarotJson.Serialize(card.ToDetailView(_assets.GetCardImagePath));
     }
 }

@@ -57,6 +57,14 @@ dotnet publish src/TarotMcp.Server -c Release -r win-x64 --self-contained -p:Pub
 
 直接雙擊執行檔不會卡住：它會顯示說明與含實際路徑的設定範例，然後等按鍵關閉。
 
+## 牌面圖片
+
+78 張插畫（`assets/cards/*.webp`）與共用邊框範本（`assets/frame/`）會**內嵌進組件**，單一檔案發佈時就在 exe 裡，不需要另外帶檔案（代價是 exe 約多 45 MB）。
+
+- `TarotMcp.Core.CardAssets` 可以直接讀內嵌的插畫與邊框（給 Lumi 這類自己疊圖的程式用）。
+- MCP server 第一次用到某張牌時，把它的插畫解出到 `%LOCALAPPDATA%/TarotMcp/assets-<版本>/cards/`（macOS／Linux 是對應的本機資料夾），工具結果的 `image` 欄位就是這個**完整檔案路徑**；解出失敗時維持相對路徑 `cards/<id>.webp`，不影響抽牌。
+- 疊圖（插畫、邊框、文字）由使用牌面的程式負責；MCP server 本身只回傳素材位置。
+
 ## 工具
 
 | 工具 | 參數 | 說明 |
